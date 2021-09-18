@@ -254,10 +254,21 @@ form.addEventListener('submit', e => {
 // preloader
 window.addEventListener('load', function() {
 
-    const preloader = document.getElementById('preloader');
+    setTimeout(removeLoader, 2000);
     
-    preloader.style.display = 'none';
-    this.document.body.classList.remove('loading');
 });
+
+
+function removeLoader() {
+
+    $('#preloader').fadeOut(500, function() {
+
+        $('.loading').removeClass();
+        $('#preloader').remove();
+
+    });
+
+
+}
 
 

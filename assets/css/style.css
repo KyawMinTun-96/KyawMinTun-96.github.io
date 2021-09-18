@@ -965,12 +965,12 @@
 	text-align: center;
 	font-family: var(--font-family2); 
 	color: var(--font-color6);
-	font-size: 13px;
+	font-size: 14px;
 	font-weight: lighter;
 	letter-spacing: 13px; 
 	word-spacing: -13px;
 	margin-bottom: 30px;
-	text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+	/* text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5); */
 }
 
 .copyright .under-line {
