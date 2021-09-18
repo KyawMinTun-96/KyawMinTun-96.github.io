@@ -1,272 +1,386 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-	<meta charset="UTF-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta charset="utf-8">
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Kyaw Min Tun</title>
-
-	<!-- fontawsome -->
-	<link rel="stylesheet" href="assets/css/font-awesome-4.7.min.css">
-
-
-	<!-- font style -->
-	<link rel="preconnect" href="https://fonts.googleapis.com">
-	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-	<link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
-
-	<!-- animate -->
-	<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-	<link rel="stylesheet"
-    	  href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
-
-
-	<!-- style -->
-	<link rel="stylesheet" href="assets/css/all.css">
-	<link rel="stylesheet" href="assets/css/style.css">
-	<link rel="stylesheet" href="assets/css/media-query.css">
-
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Portfolio</title>
+	<link rel="icon" href="img/icon.png" type="image/x-icon">
+	<link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="css/style.css">
 </head>
-<body class="loading">
+<body>
 
-	<div id="preloader"></div>
-
-
-
-	<!-- Portfolio -->
+	
 	<div id="portfolio">
+		<!--------------------------HEADER SEC-------------------------- -->
+		<header class="header" id="navbar">
 
-		<!-- navbar -->
-		<div class="navbar">
-			<div class="inner nav-group">
-				<div class="menu">
-					<div class="logo">
-						<a href="index.html" class="logo-name">Portfolio</a>
-					</div>
-					<ul class="nav">
-						<li class="nav-item"><a href="#about" class="nav-link active">About</a></li>
-						<li class="nav-item"><a href="#experience" class="nav-link">Experience</a></li>
-						<li class="nav-item"><a href="#projects" class="nav-link">Projects</a></li>
-						<li class="nav-item"><a href="#contact" class="nav-link">Contact</a></li>
+			<a href="#">Portfolio</a>
+            <nav class="nav" id="nav-menu">
+                <div class="nav_content">
+                    <a href="" class="nav_profile">
+                        <div class="nav_img">
+                            <img src="img/kmt_img.png" alt="profile image">
+                        </div>
+                        <div class="nav_name">
+                            <span class="name_list">Kyaw</span>
+                            <span class="name_list">Min Tun</span>
+                        </div>
+					</a><!--end of nav_profile class-->
+                    <div class="nav_menu">
+                        <ul class="nav_list">
+                            <li class="nav_item"><a href="#top" class="nav_link active">HOME</a></li>
+                            <li class="nav_item"><a href="#about" class="nav_link">ABOUT</a></li>
+                            <li class="nav_item"><a href="#skill" class="nav_link">SKILLS</a></li>
+							<li class="nav_item"><a href="#education" class="nav_link">EDUCATION</a></li>
+							<li class="nav_item"><a href="#project" class="nav_link">PROJECTS</a></li>
+                            <li class="nav_item"><a href="#contact" class="nav_link">CONTACT</a></li>
+                        </ul><!--end of nav_list class-->
+                    </div><!--end of nav_menu class-->
+                </div><!--end of nav_content class-->
+			</nav><!--end of nav class-->
+			<i class='bx bx-menu header_toggle' id="header-toggle"></i>
+			<!-- <i class='fa fa-bars header_toggle' id="header-toggle"></i> -->
+		</header>
+
+		<!--------------------------MV SEC-------------------------- -->
+		<div class="mv_sec" id="top">
+			<div class="my_name">
+				<h1>
+					Hi!<br/>I'm 
+					<span class="typing"></span>
+				</h1>
+				<p>Welcome to my portfolio web site.</p>
+				<div class="social">
+					<a href="https://web.facebook.com/profile.php?id=100012289154309"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+					<a href="https://twitter.com/mr_kyawmin"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+					<a href="https://www.linkedin.com/in/mg-kyaw-min-tun-718a631a4/"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+					<a href="https://github.com/MgKyawMinTun"><i class="fa fa-github" aria-hidden="true"></i></a>
+				</div><!-- end of social class -->
+				<button class="btn btn1" id="download">Download CV&nbsp;&nbsp;<i class="fa fa-download" aria-hidden="true"></i></button>
+			</div><!-- end of my_name class -->
+			<div class="profile">
+				<div class="image"></div>
+			</div><!-- end of profile class -->
+		</div><!-- end of mv_sec class -->
+
+		<!--------------------------MY SELF SEC-------------------------- -->
+		<div class="about_sec" id="about">
+			<div class="inner">
+				<p class="title">About me</p>
+				<div class="my_self">
+					<div class="image">	
+						<img src="img/img1.jpg" alt="profile image">
+						<!-- <span class="box"></span>		 -->
+					</div><!-- end of image class -->
+					<div class="content">	
+						<p class="title">Web Design\Frontend Developer</p>	
+						<p>I'm a final year IT engineering student at Technological University Mawlamyine. I have serious passion in the role of web development. I enjoy working in a team and learning new skills. I'm currently studying programming languages and creating new web design projects.</p>	
+						<div class="progress_box">
+							<div class="pg_bar">
+								<div class="info">
+									<span>UI/UX Design</span>
+								</div><!-- end of info class -->
+								<div class="progress_line design">
+									<span></span>
+								</div>
+							</div><!-- end of pg_bar class -->
+							<div class="pg_bar">
+								<div class="info">
+									<span>UI Development</span>
+								</div><!-- end of info class -->
+								<div class="progress_line development">
+									<span></span>
+								</div>
+							</div><!-- end of pg_bar class -->
+							<div class="pg_bar">
+								<div class="info">
+									<span>Photoshop</span>
+								</div><!-- end of info class -->
+								<div class="progress_line photoshop">
+									<span></span>
+								</div>
+							</div><!-- end of pg_bar class -->
+							<div class="pg_bar">
+								<div class="info">
+									<span>Backend Development</span>
+								</div><!-- end of info class -->
+								<div class="progress_line web-design">
+									<span></span>
+								</div>
+							</div><!-- end of pg_bar class -->
+						</div><!-- end of progress_box class -->
+					</div><!-- end of content class -->
+				</div><!-- end of my_self class -->
+				
+			</div><!-- end of inner class -->
+		</div><!-- end of about_sec class -->
+
+		<!--------------------------MYSKILL SEC-------------------------- -->
+		<div class="skill_sec" id="skill">
+			<p class="title">My Skills</p>
+			<div class="scroll_wrapper">
+				<div class="skill_item">
+					<img src="img/web_design.png" alt="design icon">
+					<p>Web Design</p>
+					<p>I can draw a website design using Adobe Photoshop tool. I like to draw  simple content structure and clean design patterns. When designing a website, I can design for desktop size, laptop size, tablet size as well as mobile size.</p>
+					<ul>
+						<li>Design Tools</li>
+						<li>Photoshop</li>
 					</ul>
 				</div>
+				<div class="skill_item">
+					<img src="img/ui_development.png" alt="UI icon">
+					<p>Frontend Development</p>
+					<p>In frontend UI development, I get HTML5, CSS3, JavaScript, JQuery and BootStrap. I currently use tools such as Sublime Text, Visual Studio Code, Brackets to develop UIs.</p>
+					<div class="dev_info">
+						<ul>
+							<li>Frontend</li>
+							<li>HTML</li>
+							<li>CSS</li>
+							<li>JavaScript</li>
+							<li>JQuery</li>
+							<li>BootStrap</li>
 
-				<div class="mobile-nav">
-
-					<div class="profile">
-						<div class="profile-img">
-							<img src="assets/imgs/profile/kmt_img.png" alt="profile image">
-						</div>
-						<div class="profile-name">
-							<span>
-								Kyaw
-							</span>
-							<span>
-								Min Tun
-							</span>
-						</div>
+						</ul>
+						<ul>
+							<li>Dev Tools</li>
+							<li>Sublime Text</li>
+							<li>Visual Studio Code</li>
+							<li>Brackets</li>
+							<li>Other Tools</li>
+						</ul>
 					</div>
-
-					<ul class="mobile-menu">
-						<li class="menu-item"><a href="#about" class="menu-link active">About</a></li>
-						<li class="menu-item"><a href="#experience" class="menu-link">Education</a></li>
-						<li class="menu-item"><a href="#projects" class="menu-link">Projects</a></li>
-						<li class="menu-item"><a href="#contact" class="menu-link">Contact</a></li>
+				</div><!--end of skill_item class-->
+				<div class="skill_item">
+					<img src="img/programming.png" alt="programming icon">
+					<p>Backend Development</p>
+					<p>In backend development, I'am studying PHP programming language. I can write simple CRUD project using php programming. I also understand MySQL database.</p>
+					<ul>
+						<li>Programming Language</li>
+						<li>PHP</li>
+						<li>MYSQL</li>
 					</ul>
-
-					
-					<div class="resume">
-						<a href="assets/resume/KyawMinTun_CV.pdf">Resume</a>
-					</div>
-
-					<div class="social">
-						<a target="_blank" href="https://github.com/" title="github"><i class="fa fa-github" aria-hidden="true"></i></a>
-						<a target="_blank" href="https://www.facebook.com" title="facebook"><i class="fa fa-facebook" aria-hidden="true"></i></a>
-						<a target="_blank" href="https://www.twitter.com" title="twitter"><i class="fa fa-twitter" aria-hidden="true"></i></a>
-						<a target="_blank" href="https://www.linkedin.com/" title="linkedin"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
-					</div>
-
-
 				</div>
+			</div><!--end of scroll_wrapper class-->
+		</div><!-- end of skill_sec class -->
 
-				<button type="button" class="menu-btn">
-					<div class="bars"></div>
+		<!--------------------------EDUCATION SEC-------------------------- -->
+		<div class="education_sec" id="education">
+			<div class="inner">
+				<p class="title">Education & Experience</p>
+
+				<div class="time_line">
+					<div class="list">
+						<div class="time_line_img">
+							<i class="fa fa-graduation-cap" aria-hidden="true"></i>
+						</div><!-- end of time_line_img -->
+						<div class="content">
+							<div class="date">2013 - 2014</div>
+							<p>Basic Education High School</p>
+							<p>High School Certificate (2014)</p>
+							<p>I completed my basic education high school Daik-U Township in Bago Region. I passed the tenth grade in 2013 and 2014.</p>
+						</div><!-- end of content class -->
+					</div><!-- end of list class -->
+
+					<div class="list">
+						<div class="time_line_img">
+							<i class="fa fa-graduation-cap" aria-hidden="true"></i>
+						</div><!-- end of time_line_img -->
+						<div class="content">
+							<div class="date">2015 - 2020</div>
+							<p>Technological University (Mawlamyine)</p>
+							<p>Bachelor of Engineering (Final Year)</p>
+							<p>Around 2015, I started attending Technological University Mawlamyine. I studied IT technical subjects such as programming and networking.</p>
+						</div><!-- end of content class -->
+					</div><!-- end of list class -->
+
+					<div class="list">
+						<div class="time_line_img">
+							<i class="fa fa-line-chart" aria-hidden="true"></i>
+						</div><!-- end of time_line_img -->
+						<div class="content">
+							<div class="date">Oct\2019 - Dec\2019</div>
+							<p>Aquarius Tech Myanmar (Yangon)</p>
+							<p>Web Design & Front-end Web Design (Course)</p>
+							<p>In 2019, I joined two-month web design and frontend web development course at Aquarius Tech Myanmar. I also learned HTML5, CSS3, JavaScript BootStrap to develop UI and for web design using photoshop.</p>
+						</div><!-- end of content class -->
+					</div><!-- end of list class -->
+
+					<div class="list">
+						<div class="time_line_img">
+							<i class="fa fa-briefcase" aria-hidden="true"></i>
+						</div><!-- end of time_line_img -->
+						<div class="content">
+							<div class="date">July\2020 - Aug\2020</div>
+							<p>Spiceworks Myanmar Co., Ltd</p>
+							<p>Two Months Internship</p>
+							<p>In my final year of school, as work experience, I worked two months of internship at Spiceworks Myanmar Company. I worked in the UI development section of the company.</p>
+						</div><!-- end of content class -->
+					</div><!-- end of list class -->
+
+
+					<div class="list">
+						<div class="time_line_img">
+							<i class="fa fa-line-chart" aria-hidden="true"></i>
+						</div><!-- end of time_line_img -->
+						<div class="content">
+							<div class="date">Feb\2017 - Jun\2017</div>
+							<p>NANO TECH Computer Training Center (Mawlamyine) </p>
+							<p>Java Programming Course</p>
+							<p>Around 2017, I joined a Java programming course at NANO TECH Computer Training Center for five months. I also learned the Java programming language.</p>
+						</div><!-- end of content class -->
+					</div><!-- end of list class -->
+
+					<div class="list">
+						<div class="time_line_img">
+							<i class="fa fa-line-chart" aria-hidden="true"></i>
+						</div><!-- end of time_line_img -->
+						<div class="content">
+							<div class="date">Oct\2015 - Nov\2015</div>
+							<p>Nano Tech Computer Training & Maintenance, Repairing Center</p>
+							<p>Basic Computer System & Hardware Maintenance Course</p>
+							<p>In 2015, I joined the Basic Computer System & Hardware Maintenance Course at Nano Tech Computer Training & Maintenance, Repairing Center for two months.</p>
+						</div><!-- end of content class -->
+					</div><!-- end of list class -->
+
+				</div><!-- end of time_line class -->
+			</div><!-- end of inner class-->
+		</div><!-- end of education_sec class -->
+
+		<!--------------------------PROJECT SEC-------------------------- -->
+		<div class="project_header" id="project">
+			<div class="inner">
+				<p class="title">Projects</p>
+				<div class="project_item">
+					<div class="project_list">
+						<img src="img/hotel1.png" class="pj_img" alt="Zfreeti Hotel image">
+						<div class="content">
+							<p>Zfreeti Hotel Website</p>
+							<a href="https://mgkyawmin.github.io/zfreetihotel/">>> go to website <<</a>
+						</div>
+					</div>
+					<div class="project_list">
+						<img src="img/jewellery.jpg" class="pj_img" alt="diamond palace image">
+						<div class="content">
+							<p>Diamond Palace Jewellery Website</p>
+							<a href="https://mgkyawmintun.github.io/diamondpalace">>> go to website <<</a>
+						</div>
+					</div>
+					<div class="project_list">
+						<img src="img/travel-&-tour_01.png" class="pj_img" alt="Travel and Tour image">
+						<div class="content">
+							<p>Travel and Tour Website</p>
+							<a href="https://mgkyawmintun.github.io/travelandtour">>> go to website <<</a>
+						</div>
+					</div>
+
+				</div><!--end of project_item class-->
+				<button type="button" class="pj_btn">
+					<span>View More <span>&nbsp;&nbsp;
+					<i class="fa fa-angle-double-right" aria-hidden="true"></i></span></span> 
 				</button>
 			</div>
 		</div>
 
-		<!-- main -->
-		<div id="content">
-			<main class="main">
-				<div class="main-inner">
-					<section class="info">
-						<p>Hi, my name is</p>
-						<p>Kyaw Min Tun.</p>
-						<p>I build things for the web.</p>
-						<p>I’m a software engineer specializing in building (and occasionally designing) exceptional digital experiences. Currently, I’m focused on building accessible, human-centered products at Upstatement.</p>
-						<div class="cv-btn">
-							<a href="#">Resume</a>
+
+		<!--------------------------CONTACT SEC-------------------------- -->
+		<div class="contact_sec" id="contact">
+			<div class="inner">
+				<p class="title">Contact me</p>
+				<div class="cont_group">
+					<div class="info">
+						<p>Contact Information</p>
+						<p>Name:&nbsp;Mg Kyaw Min Tun</p>
+						<p>Email:&nbsp;kyawmintun163948@gmail.com</p>
+						<p>Phone:&nbsp;09-794144487</p>
+						<div class="social_media">
+							<a href="https://web.facebook.com/profile.php?id=100012289154309" title=""><i class="fa fa-facebook" aria-hidden="true"></i></a>
+							<a href="https://twitter.com/mr_kyawmin" title=""><i class="fa fa-twitter" aria-hidden="true"></i></a>
+							<a href="https://www.linkedin.com/in/mg-kyaw-min-tun-718a631a4/" title=""><i class="fa fa-linkedin" aria-hidden="true"></i></a>
 						</div>
-					</section>
+					</div><!-- end of info class -->
+					<form method="post" autocomplete="off" name="google-sheet" id="reset">
+						<input type="text" name="name" maxlength="20" placeholder="Your name" required>
+						<input type="email" name="email" maxlength="50" placeholder="Your email" required>
+						<input type="text" name="subject" maxlength="50" placeholder="Subject" required>
+						<textarea name="message" cols="5" rows="5" placeholder="Message" required></textarea>
+						<input type="submit" value="Send message" class="button">
+					</form>
+				</div><!-- end fo cont_group class -->
+			</div><!-- end of inner class -->
+		</div><!-- end of contact_sec class -->
 
-					<!-- about -->
-					<section id="about" class="my-info" data-aos="fade-up" data-aos-duration="3000">
-						<h2 class="sec-title">About Me</h2>
 
-						<div class="about">
-							<div class="content">
-								<p>Hello! My name is Brittany and I enjoy creating things that live on the internet. My interest in web development started back in 2012 when I decided to try editing custom Tumblr themes — turns out hacking together a custom reblog button taught me a lot about HTML & CSS!</p>
-
-								<p>Fast-forward to today, and I’ve had the privilege of working at an advertising agency, a start-up, a huge corporation, and a student-led design studio. My main focus these days is building accessible, inclusive products and digital experiences at Upstatement for a variety of clients.</p>
-
-								<p>I also recently launched a course that covers everything you need to build a web app with the Spotify API using Node & React.</p>
-
-								<p>Lorem ipsum dolor sit amet consectetur adipisicing elit..</p>
-
-								<ul class="skills">
-									<li>PHP</li>
-									<li>HTML5</li>
-									<li>Laravel</li>
-									<li>CSS3</li>
-									<li>MySQL</li>
-									<li>JavaScript</li>
-									<li>Bootstrap</li>
-									<li>JQuery</li>
-									<li>Git</li>
-									<li>Photoshop</li>
-								</ul>
+		<!--------------------------FOOTER SEC-------------------------- -->
+		<div class="footer_sec">
+			<div class="inner">
+				<div class="ft_group">
+					<div class="ft_list">
+						<img src="img/location_icon.png" alt="This photo is location icon">
+						<p class="title">Address</p>
+						<p>No (213), PaTaMyarMyay Street, TanTaTar Yap, Daik-U Township, Bago Region, Myanmar</p>
+						<p>KyeeMyinDaing Township, Yangon, Myamar</p>
+					</div><!-- end of ft_list class -->
+					<div class="ft_list">
+						<img src="img/mail_icon.png" alt="This photo is email icon">
+						<p class="title">E-mail</p>
+						<p><a href="mailto:example@email.com">kyawmintun163948@gmail.com</a></p>
+					</div><!-- end of ft_list class -->
+					<div class="ft_list">
+						<img src="img/phone_icon.png" alt="This photo is phone icon">
+						<p class="title">Contact</p>
+						<p>Phone: <a href="tel:+95-979-414-4487">09-794144487</a></p>
+						<p>Phone: <a href="tel:+95-995-262-1314">09-952621314</a></p>
+					</div><!-- end of ft_list class -->
+					<div class="ft_list">
+						<div class="social_media">
+							<div class="icon facebook">
+								<div class="tooltip">
+									Facebook
+								</div><!-- end of tooltip class -->
+								<a href="https://web.facebook.com/profile.php?id=100012289154309"><i class="fa fa-facebook" aria-hidden="true"></i></a>
 							</div>
-							<div class="profile">
-								<div class="wrapper">
-									<div class="image-wrapper">
-										<div class="image">
-											<img src="./assets/imgs/profile/kmt_img.png" alt="profile image">
-										</div>
-									</div>
-								</div>
+							<div class="icon twitter">
+								<div class="tooltip">
+									Twitter
+								</div><!-- end of tooltip class -->
+							 	<a href="https://twitter.com/mr_kyawmin"><i class="fa fa-twitter" aria-hidden="true"></i></a>
 							</div>
-						</div>
-					</section>
-
-
-
-					<!-- experience & education -->
-					<section id="experience" class="my-skill" data-aos="fade-up" data-aos-duration="3000">
-						<h2 class="sec-title">Experiences</h2>
-
-						<div class="skill-sec">
-							<div class="skill-tab">
-								<button type="button" class="tab-btn highlight" id="tabEdu">
-									<span>Education</span>
-								</button>
-								<button type="button" class="tab-btn" id="tabCer">
-									<span>Certificate</span>
-								</button>
-								<button type="button" class="tab-btn" id="tabDev">
-									<span>Development</span>
-								</button>
-								<button type="button" class="tab-btn" id="tabExp">
-									<span>Experiences</span>
-								</button>
-								<button type="button" class="tab-btn" id="tabSkl">
-									<span>Skills</span>
-								</button>
-								<button type="button" class="tab-btn" id="tabTol">
-									<span>Tools</span>
-								</button>
+							<div class="icon linkedin">
+								<div class="tooltip">
+									Linkedin
+								</div><!-- end of tooltip class -->
+								<a href="https://www.linkedin.com/in/mg-kyaw-min-tun-718a631a4/"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
 							</div>
-
-							<div class="description">
-								<div id="load-content"></div>
+							<div class="icon github">
+								<div class="tooltip">
+									GitHub 
+								</div><!-- end of tooltip class -->
+								<a href="https://github.com/MgKyawMinTun"><i class="fa fa-github" aria-hidden="true"></i></a>
 							</div>
-						</div>
-					</section>
+						</div><!-- end of social_media class -->
+					</div><!-- end of ft_list class -->
+				</div><!-- end of ft_group class -->
+
+				<div class="copyright">
+					<hr class="line">
+					<small>&copy; 2020 My Portfolio. All rights reserved | Designed by KyawMinTun</small>
+				</div><!-- end of copyright class -->
+			</div><!-- end of inner class -->
+			<div class="back_to_top" id="click_btn"></div>
+		</div><!-- end of footer_sec class -->
+	</div><!-- end of portfolio id -->
 
 
-					<!-- projects -->
-					<section id="projects" class="my-projects" data-aos="fade-up" data-aos-duration="3000">
-						<h2 class="sec-title">Projects</h2>
-
-						<div class="project-tab">
-							<button type="button" class="proj-btn proj-active" id="loadProj">Projects</button>
-							<button type="button" class="proj-btn" id="loadDes">Design</button>
-						</div>
-
-						
-						<div id="load-card"></div>
-
-					</section>
-
-
-					<!-- contact -->
-					<section id="contact" class="my-contact" data-aos="fade-up" data-aos-duration="3000">
-						<h2 class="sec-title">Contact</h2>
-
-						<div class="contact-sec">
-							<div class="contact-info">
-								<p>Although I’m not currently looking for any new opportunities, my inbox is always open. Whether you have a question or just want to say hi, I’ll try my best to get back to you!</p>
-								<ul class="address">
-									<li>Name: &nbsp;Kyaw Min Tun</li>
-									<li>Email: <a href="mailto:kyawmintun163948@gmail.com">kyawmintun163948@gmail.com</a></li>
-									<li>Phone: <a href="tel:09794144487">09-794-144-487</a></li>
-									<li>Phone: <a href="tel:09952621314">09-952-621-314</a></li>
-								</ul>
-							</div>
-		
-		
-							<form name="form-data" method="post" class="form" id="reset">
-								<p>
-									<input type="text" name="Username" placeholder="full name" required autocomplete="off">
-									<input type="email" name="Email" placeholder="email address" required autocomplete="off">
-								</p>
-								<input type="text" name="Subject" placeholder="subject" required autocomplete="off">
-
-								<textarea id="" cols="30" name="Message" rows="10" placeholder="Message" required autocomplete="off"></textarea>
-
-								<div class="form-btn">
-									<input type="submit" name="submit" value="Send">
-								</div>
-							</form>
-						</div>
-
-					</section>
-
-				</div>
-			</main>
-
-			<!-- social media -->
-			<footer>
-				<div class="main-social">
-					<a target="_blank" href="https://www.github.com" title="github"><i class="fa fa-github" aria-hidden="true"></i></a>
-					<a target="_blank" href="https://www.facebook.com" title="facebook"><i class="fa fa-facebook" aria-hidden="true"></i></a>
-					<a target="_blank" href="https://www.twitter.com" title="twitter"><i class="fa fa-twitter" aria-hidden="true"></i></a>
-					<a target="_blank" href="https://linkedin.com" title="linkedin"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
-				</div>
-
-
-				<div class="footer-sec">
-					<div class="main-inner">
-						<div class="copyright">
-							<p>Kyaw Min Tun</p>
-							<div class="under-line"></div>
-						</div>
-					</div>
-				</div>
-				
-			</footer>
-		</div>
-
-	</div>
-
-
-	<!-- script -->
-	<script src="assets/js/jquery-3.6.0.js"></script>
-
-	<!-- animate -->
-	<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-	<script>AOS.init();</script>
-	
-	<script src="assets/js/all.js"></script>
-
+	<!-- <script src="js/jquery-1.12.4.min.js"></script> -->
+	<script src="https://code.jquery.com/jquery-3.6.0.min.js"
+			integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+			crossorigin="anonymous"></script>
+	<script defer type="text/javascript" src="js/app.js"></script>
+	<script defer type="text/javascript" src="js/script.js"></script>
 </body>
 </html>
