@@ -34,6 +34,14 @@
 
 /*----Tablet size------*/
 @media (max-width: 769px) {
+
+
+    /*----------------Preloader SEC-----------------*/
+    #preloader {
+        background-size: 20%;
+    }
+
+
     
     /*----------------MAIN SEC-----------------*/
     .info p:first-of-type {
@@ -92,6 +100,10 @@
     /*----------------PROJECT SEC-----------------*/
     .my-projects h2::after {
         width: 75%;
+    }
+
+    .model .model-inner {
+        top: 7%;
     }
 
 
@@ -153,6 +165,17 @@
     .inner {
         margin: 0 6%;
     }
+
+    /*----------------Preloader SEC-----------------*/
+    #preloader {
+        background-size: 20%;
+    }
+
+    .model .model-inner {
+        top: 10%;
+        width: 85%;
+    }
+
     
     /*----------------navbar-----------------*/
     .nav{

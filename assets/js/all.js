@@ -91,7 +91,7 @@ function deviceChange(e) {
         
                 $('html, body').stop().animate({
         
-                    'scrollTop': $target.offset().top + 2
+                    'scrollTop': $target.offset().top() + 2
         
                 }, 500, 'swing', function () {
         
@@ -188,6 +188,7 @@ $(document).ready(function() {
     function loadProj() {
         $('#load-card').load('projects.html');
     }
+
     loadProj();
 
     $('#loadProj').click(function() {
@@ -203,10 +204,13 @@ $(document).ready(function() {
     $('.project-tab').on('click', '.proj-btn', function(e) {
 
         e.preventDefault();
+
         $('.proj-btn').removeClass('proj-active');
         $(this).addClass('proj-active');
 
     });
+
+
 
 
 
@@ -239,7 +243,7 @@ form.addEventListener('submit', e => {
         }
         )
         .then(
-            response => alert("Thanks for Contacting me..! I Will Contact You Soon...") + 
+            response => alert("Thanks for Contacting me..! I Will Contact You Soon...") +
             document.getElementById('reset').reset()
             )
         .catch(
@@ -251,7 +255,7 @@ form.addEventListener('submit', e => {
 
 
 
-// preloader
+/*===============preloader===================*/
 window.addEventListener('load', function() {
 
     setTimeout(removeLoader, 2000);
@@ -267,8 +271,15 @@ function removeLoader() {
         $('#preloader').remove();
 
     });
-
-
 }
+
+
+
+
+
+
+
+
+
 
 

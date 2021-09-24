@@ -1,71 +1,96 @@
-<div class="design">
-    <div class="card">
-        <div class="card-image">
-            <img src="assets/imgs/designs/travel_tour.jpg" alt="design image">
+    <div class="design"></div>
+    <button type="button" class="load-btn">Show More</button>
 
-            <div class="card-title">
-                <p>One Mart</p>
-            </div>
-        </div>
-    </div>
+<script>
+    $(document).ready(function() {
 
-    <div class="card">
-        <div class="card-image">
-            <img src="assets/imgs/designs/tour-list_01.png" alt="design image">
-            
-            <!-- <div class="card-title">
-                <p>One Mart</p>
-            </div> -->
-        </div>
-    </div>
+        $('.design').on('click', '.view-btn', function() {
 
-    <div class="card">
-        <div class="card-image">
-            <img src="assets/imgs/designs/travel_destination.jpg" alt="design image">
-            
-            <div class="card-title">
-                <p>One Mart</p>
-            </div>
-        </div>
-    </div>
+            $('.model').css({
+                'z-index': 999999999,
+	            'opacity': 1
+            });
 
-    <div class="card">
-        <div class="card-image">
-            <img src="assets/imgs/designs/hotel.jpg" alt="design image">
+            $('body').addClass('loading');
 
-            <div class="card-title">
-                <p>One Mart</p>
-            </div>
-        </div>
-    </div>
 
-    <div class="card">
-        <div class="card-image">
-            <img src="assets/imgs/designs/jewellery.jpg" alt="design image">
-            
-            <div class="card-title">
-                <p>One Mart</p>
-            </div>
-        </div>
-    </div>
+            let image = $(this).data('img');
+            let name = $(this).data('name');
 
-    <div class="card">
-        <div class="card-image">
-            <img src="assets/imgs/designs/portfolio.jpg" alt="design image">
-            
-            <div class="card-title">
-                <p>One Mart</p>
-            </div>
-        </div>
-    </div>
+            $('#model-title #title').contents = image;
 
-    <div class="card">
-        <div class="card-image">
-            <img src="assets/imgs/designs/modify.png" alt="design image">
-            
-            <div class="card-title">
-                <p>One Mart</p>
-            </div>
-        </div>
-    </div>
-</div>
+        });
+
+        $('.close-btn').click(function() {
+
+            $('.model').css({
+                'z-index': -1,
+	            'opacity': 0
+            });
+
+            $('body').removeClass('loading');
+
+        });
+    
+    
+
+        function loadImage() {
+
+            $.ajax({
+
+                url: '../assets/json/design.json',
+                method: 'GET',
+                dataType: "json",
+                success:function(data) {
+
+                    let output = '';
+
+                    for(let i = 0; i < data.length; i++) {
+                        
+                        output += `
+                        <div class="card">
+                            <div class="card-image">
+                                <img src="assets/imgs/designs/` + data[i].image + `" alt="design image">
+                            </div>
+                            
+                            <button type="button" data-img="` + data[i].image + `" data-name="` + data[i].title + `" class="view-btn"><i class="fa fa-eye"></i></button>
+                        </div>
+                        `;
+                    }
+
+                    $('.design').append(output);
+
+
+                    $(document).ready(function() {
+
+                        design = $('.design');
+                        $.each(design, function() {
+                            $(this)
+                            .find('.card')
+                            .slice(4)
+                            .hide(); 
+                        });
+
+                        $('.load-btn').click(function(e) {
+
+                            e.preventDefault();
+
+                            $(this).parent().find(".card:hidden").slice(0, 4).fadeIn('fast');
+
+                        });
+
+                    });
+
+                },
+                error: function(error) {
+                    console.log(`Error: ${error}`);
+                }
+
+            });
+        }
+
+        loadImage();
+    
+    
+    });
+</script>
