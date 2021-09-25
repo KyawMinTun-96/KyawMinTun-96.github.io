@@ -91,7 +91,7 @@ function deviceChange(e) {
         
                 $('html, body').stop().animate({
         
-                    'scrollTop': $target.offset().top() + 2
+                    'scrollTop': $target.offset().top + 2
         
                 }, 500, 'swing', function () {
         
@@ -196,7 +196,9 @@ $(document).ready(function() {
     });
 
     $('#loadDes').click(function() {
+        
         $('#load-card').load('design.html');
+
     });
 
 
@@ -272,14 +274,3 @@ function removeLoader() {
 
     });
 }
-
-
-
-
-
-
-
-
-
-
-

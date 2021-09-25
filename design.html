@@ -1,38 +1,10 @@
     <div class="design"></div>
     <button type="button" class="load-btn">Show More</button>
 
+
+
 <script>
     $(document).ready(function() {
-
-        $('.design').on('click', '.view-btn', function() {
-
-            $('.model').css({
-                'z-index': 999999999,
-	            'opacity': 1
-            });
-
-            $('body').addClass('loading');
-
-
-            let image = $(this).data('img');
-            let name = $(this).data('name');
-
-            $('#model-title #title').contents = image;
-
-        });
-
-        $('.close-btn').click(function() {
-
-            $('.model').css({
-                'z-index': -1,
-	            'opacity': 0
-            });
-
-            $('body').removeClass('loading');
-
-        });
-    
-    
 
         function loadImage() {
 
@@ -63,24 +35,100 @@
 
                     $(document).ready(function() {
 
-                        design = $('.design');
-                        $.each(design, function() {
-                            $(this)
-                            .find('.card')
-                            .slice(4)
-                            .hide(); 
+                        if($(window).width() <= 768) {
+
+                            design = $('.design');
+                            $.each(design, function() {
+                                $(this)
+                                .find('.card')
+                                .slice(6)
+                                .hide(); 
+                            });
+
+                            $('.load-btn').click(function(e) {
+
+                                e.preventDefault();
+
+                                $(this).parent().find(".card:hidden").slice(0, 3).fadeIn('fast');
+
+                            });
+
+                        }
+
+                        if($(window).width() > 1024) {
+
+                            design = $('.design');
+                            $.each(design, function() {
+                                $(this)
+                                .find('.card')
+                                .slice(8)
+                                .hide(); 
+                            });
+
+                            $('.load-btn').click(function(e) {
+
+                                e.preventDefault();
+
+                                $(this).parent().find(".card:hidden").slice(0, 4).fadeIn('fast');
+
+                            });
+                        }
+
+                        if($(window).width() > 768 && $(window).width() <= 1024 ) {
+
+                            design = $('.design');
+                            $.each(design, function() {
+                                $(this)
+                                .find('.card')
+                                .slice(6)
+                                .hide(); 
+                            });
+
+                            $('.load-btn').click(function(e) {
+
+                                e.preventDefault();
+
+                                $(this).parent().find(".card:hidden").slice(0, 3).fadeIn('fast');
+
+                            });
+
+                        }
+
+
+                        $('.card').on('click', '.view-btn', function() {
+
+                            let image = $(this).data('img');
+                            let name = $(this).data('name');
+
+                            $('.model').css({
+                                'z-index': 999999999,
+                                'opacity': 1
+                            });
+                            $('body').addClass('loading');
+
+
+                            /*--------model box-------*/
+                            const mTitle = document.querySelector('.model-title #title');
+                            const mImage = document.getElementById('design-image');
+                            mTitle.textContent = name;
+                            mImage.src = 'assets/imgs/designs/' + image;
+
+                     
+
+                            $('.close-btn').click(function() {
+
+                                $('.model').css({
+                                    'z-index': -1,
+                                    'opacity': 0
+                                });
+
+                                $('body').removeClass('loading');
+
+                            });
+
                         });
-
-                        $('.load-btn').click(function(e) {
-
-                            e.preventDefault();
-
-                            $(this).parent().find(".card:hidden").slice(0, 4).fadeIn('fast');
-
-                        });
-
+                   
                     });
-
                 },
                 error: function(error) {
                     console.log(`Error: ${error}`);
@@ -90,7 +138,6 @@
         }
 
         loadImage();
-    
-    
+
     });
 </script>

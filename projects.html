@@ -49,22 +49,66 @@
 
                 $(document).ready(function() {
 
-                    pjSec = $('.projects-sec');
-                    $.each(pjSec, function() {
-                        $(this)
-                        .find('.card')
-                        .slice(3)
-                        .hide(); 
-                    });
+                    if($(window).width() > 1024) {
 
-                    $('.load-btn').click(function(e) {
+                        pjSec = $('.projects-sec');
+                        $.each(pjSec, function() {
+                            $(this)
+                            .find('.card')
+                            .slice(6)
+                            .hide(); 
+                        });
 
-                        e.preventDefault();
+                        $('.load-btn').click(function(e) {
 
-                        $(this).parent().find(".card:hidden").slice(0, 3).fadeIn('fast');
+                            e.preventDefault();
 
-                    });
+                            $(this).parent().find(".card:hidden").slice(0, 3).fadeIn('fast');
 
+                        });
+
+                    }
+                    
+                    if($(window).width() > 768 && $(window).width() <= 1024 ) {
+
+                        pjSec = $('.projects-sec');
+                        $.each(pjSec, function() {
+                            $(this)
+                            .find('.card')
+                            .slice(4)
+                            .hide(); 
+                        });
+
+                        $('.load-btn').click(function(e) {
+
+                            e.preventDefault();
+
+                            $(this).parent().find(".card:hidden").slice(0, 2).fadeIn('fast');
+
+                        });
+
+                    }
+                
+                    if($(window).width() <= 768) {
+
+                        pjSec = $('.projects-sec');
+                        $.each(pjSec, function() {
+                            $(this)
+                            .find('.card')
+                            .slice(4)
+                            .hide(); 
+                        });
+
+                        $('.load-btn').click(function(e) {
+
+                            e.preventDefault();
+
+                            $(this).parent().find(".card:hidden").slice(0, 2).fadeIn('fast');
+
+                        });
+
+                    }
+                
                 });
                 
             },
