@@ -1,21 +1,23 @@
-const menuBtn = document.getElementsByClassName('menu-btn')[0];
-const bars = document.getElementsByClassName('bars')[0];
-const mobileNav = document.getElementsByClassName('mobile-nav')[0];
+const menuBtn = document.querySelector('.menu-btn');
+const closeBtn = document.getElementById('close-btn');
+const openBtn = document.getElementById('open-btn');
+const mobileNav = document.querySelector('.mobile-nav');
 
 
 
-menuBtn.addEventListener('click', function(event) {
+openBtn.addEventListener('click', function(event) {
 
     event.preventDefault();
 
-    bars.classList.toggle('close');//for close btn
-    mobileNav.classList.toggle('slide-nav');//for mobile nav
-    document.body.classList.toggle('blur');//blur body
-    document.body.classList.toggle('scroll');//body scrooll off
-    menuBtn.classList.toggle('hover');//for zindex
+    closeBtn.style.display = "block";//for close btn
+    openBtn.style.display = "none";//for open btn
+    mobileNav.classList.add('slide-nav');//for mobile nav
+    document.body.classList.add('blur');//blur body
+    document.body.classList.add('scroll');//body scrooll off
+    menuBtn.classList.add('hover');//for zindex
 
 
-    // mobile nav 
+    //mobile nav 
     $('.mobile-menu').on('click', '.menu-link', function(e) {
 
         e.preventDefault();
@@ -24,6 +26,20 @@ menuBtn.addEventListener('click', function(event) {
         $(this).addClass('active');
 
     });
+
+});
+
+
+closeBtn.addEventListener('click', function(e) {
+
+    e.preventDefault();
+
+    closeBtn.style.display = "none";//for close btn
+    openBtn.style.display = "block";//for open btn
+    mobileNav.classList.remove('slide-nav');//for mobile nav
+    document.body.classList.remove('blur');//blur body
+    document.body.classList.remove('scroll');//body scrooll off
+    menuBtn.classList.remove('hover');//for zindex
 
 });
 
