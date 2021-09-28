@@ -83,14 +83,11 @@
 }
 
 .menu-btn {
+	display: block;
 	position: absolute;
-	top: 0;
-	bottom: 0;
-	margin: auto 0;
 	right: 0;
-	cursor: pointer;
-	background-color: transparent;
-	border: none;
+	top: 50%;
+	transform: translateY(-50%);
 	display: none;
 }
 
