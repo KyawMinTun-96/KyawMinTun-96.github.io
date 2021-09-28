@@ -4,26 +4,25 @@
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="author" content="Kyaw Min Tun"/>
+	<meta name="revised" content="Kyaw Min Tun, 9/28/2021"/>
+	<meta name="description" content="Portfolio"/>
+	<meta name="keywords" content="HTML,CSS,HTML5,CSS3,JQuery,JavaScript,
+	PHP,Laravel,MySQL,Bootstrap,portfolio,Portfolio,design,Design,web design,
+	Web Design,frontend developer,Frontend Developer,backend developer, Backend Developer"/>
 	<title>Kyaw Min Tun</title>
-
 	<!-- fontawsome -->
-	<link rel="stylesheet" href="assets/css/font-awesome-4.7.min.css">
-	<!-- bootstrap icon -->
-	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
-
-
-	<!-- font style -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+	<!-- bootstrap icon cdn -->
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" />
+	<!-- font style cdn-->
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
-
-	<!-- animate -->
+	<!-- animate cdn -->
 	<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-	<link rel="stylesheet"
-    	  href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
-
-
-	<!-- style -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+	<!-- style css -->
 	<link rel="stylesheet" href="assets/css/all.css">
 	<link rel="stylesheet" href="assets/css/style.css">
 	<link rel="stylesheet" href="assets/css/media-query.css">
@@ -32,8 +31,6 @@
 <body class="loading" >
 
 	<div id="preloader"></div>
-
-
 
 	<!-- Portfolio -->
 	<div id="portfolio">
@@ -103,17 +100,17 @@
 			<main class="main">
 				<div class="main-inner">
 					<section class="info">
-						<p>Hi, my name is</p>
-						<p>Kyaw Min Tun.</p>
-						<p>I build things for the web.</p>
-						<p>I’m junior web developer specializing in building (and occasionally designing) exceptional digital experiences. I’m focused on building accessible, human-centered products.</p>
-						<div class="cv-btn">
+						<p class="animate__animated animate__slideInDown animate__delay-2s">Hi, my name is</p>
+						<p class="animate__animated animate__slideInUp animate__delay-2s">Kyaw Min Tun.</p>
+						<p class="animate__animated animate__slideInUp animate__delay-2s">I build things for the web.</p>
+						<p class="animate__animated animate__slideInUp animate__delay-2s">I’m junior web developer specializing in building (and occasionally designing) exceptional digital experiences. I’m focused on building accessible, human-centered products.</p>
+						<div class="cv-btn animate__animated animate__bounceInLeft animate__delay-2s">
 							<a href="assets/resume/KyawMinTun_CV.pdf">Resume</a>
 						</div>
 					</section>
 
 					<!-- about -->
-					<section id="about" class="my-info" data-aos="fade-up" data-aos-duration="3000">
+					<section id="about" class="my-info" data-aos="fade-up">
 						<h2 class="sec-title">About Me</h2>
 
 						<div class="about">
@@ -154,7 +151,7 @@
 
 
 					<!-- experience & education -->
-					<section id="experience" class="my-skill" data-aos="fade-up" data-aos-duration="3000">
+					<section id="experience" class="my-skill" data-aos="fade-up">
 						<h2 class="sec-title">Experiences</h2>
 
 						<div class="skill-sec">
@@ -187,7 +184,7 @@
 
 
 					<!-- projects -->
-					<section id="projects" class="my-projects" data-aos="fade-up" data-aos-duration="3000">
+					<section id="projects" class="my-projects" data-aos="fade-up">
 						<h2 class="sec-title">Projects</h2>
 
 						<div class="project-tab">
@@ -231,7 +228,6 @@
 								</div>
 							</form>
 						</div>
-
 					</section>
 
 				</div>
@@ -247,7 +243,7 @@
 				</div>
 
 
-				<div class="footer-sec" data-aos="fade-up" data-aos-duration="3000">
+				<div class="footer-sec">
 					<div class="main-inner">
 						<div class="copyright">
 							<p>Built By Kyaw Min Tun</p>
@@ -275,12 +271,16 @@
 
 
 	<!-- script -->
-	<script src="assets/js/jquery-3.6.0.js"></script>
-
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 	<!-- animate -->
 	<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-	<script>AOS.init();</script>
-	
+	<script>
+	AOS.init({
+		duration: 1000, // values from 0 to 3000, with step 50ms
+		once: true,
+	});
+	</script>
+	<!-- script -->
 	<script src="assets/js/all.js"></script>
 
 </body>

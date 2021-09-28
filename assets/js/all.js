@@ -1,7 +1,7 @@
-const menuBtn = document.querySelector('.menu-btn');
-const closeBtn = document.getElementById('close-btn');
-const openBtn = document.getElementById('open-btn');
-const mobileNav = document.querySelector('.mobile-nav');
+var menuBtn = document.querySelector('.menu-btn');
+var closeBtn = document.getElementById('close-btn');
+var openBtn = document.getElementById('open-btn');
+var mobileNav = document.querySelector('.mobile-nav');
 
 
 
@@ -15,17 +15,6 @@ openBtn.addEventListener('click', function(event) {
     document.body.classList.add('blur');//blur body
     document.body.classList.add('scroll');//body scrooll off
     menuBtn.classList.add('hover');//for zindex
-
-
-    //mobile nav 
-    $('.mobile-menu').on('click', '.menu-link', function(e) {
-
-        e.preventDefault();
-
-        $('.menu-link').removeClass('active');
-        $(this).addClass('active');
-
-    });
 
 });
 
@@ -44,9 +33,39 @@ closeBtn.addEventListener('click', function(e) {
 });
 
 
+$(document).ready(function() {
 
+    //mobile nav 
+    $('.mobile-menu').on('click', '.menu-link', function(e) {
 
+        e.preventDefault();
 
+        $(document).off('scroll');
+        $('.menu-link').removeClass('active');
+        $(this).addClass('active');
+
+        var target = this.hash;
+        $target = $(target);
+
+        $('html, body').stop().animate({
+
+            'scrollTop': $target.offset().top + 2
+
+        }, 500, 'swing', function () {
+
+            window.location.hash = target;
+
+        });
+
+        closeBtn.style.display = "none";//for close btn
+        openBtn.style.display = "block";//for open btn
+        mobileNav.classList.remove('slide-nav');//for mobile nav
+        document.body.classList.remove('blur');//blur body
+        document.body.classList.remove('scroll');//body scrooll off
+        menuBtn.classList.remove('hover');//for zindex
+
+    });
+})
 
 
 const mediaQuery = window.matchMedia('(min-width: 576px)');
@@ -157,10 +176,6 @@ function deviceChange(e) {
 }
 
 deviceChange(mediaQuery);
-
-
-
-
 
 
 /*=================Experiences=================*/ 
@@ -285,8 +300,8 @@ function removeLoader() {
 
     $('#preloader').fadeOut(500, function() {
 
-        $('.loading').removeClass();
         $('#preloader').remove();
+        $('.loading').removeClass();
 
     });
 }
