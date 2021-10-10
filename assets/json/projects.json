@@ -1,91 +1,72 @@
 [
     {
         "id" : 1,
-        "title" : "Travel and Tour",
+        "title" : "One Mart Online Shop",
         "content" : "Lorem ipsum dolor sit amet consectetur. Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem, eveniet.",
-        "languages": ["HTML5", "CSS3", "JavaScript", "JQuery", "PHP", "MySQL"],
-        "github": "https://www.github.com",
-        "demo": ""
+        "languages": ["HTML5", "CSS3", "JavaScript", "JQuery", "Bootstrap", "PHP", "MySQL"],
+        "github": "https://github.com/KyawMinTun-96",
+        "demo": "https://github.com/HtetYinMin/One-Mart"
     },
 
     {
         "id" : 2,
-        "title" : "One Mart Online Shop",
+        "title" : "Internal Document Management System",
         "content" : "Lorem ipsum dolor sit amet consectetur. Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem, eveniet.",
-        "languages": ["HTML5", "CSS3", "JavaScript"],
-        "github": "https://www.github.com",
-        "demo": ""
+        "languages": ["HTML5", "CSS3", "JavaScript", "JQuery", "PHP", "MySQL"],
+        "github": "https://github.com/KyawMinTun-96",
+        "demo": "https://github.com/KyawMinTun-96/IDMS"
     },
 
     {
         "id" : 3,
-        "title" : "Lorem ipsum dolor sit, amet consectetur adipisicing.ee",
+        "title" : "Myanmar News Website",
         "content" : "Lorem ipsum dolor sit amet consectetur. Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem, eveniet.",
-        "languages": ["HTML5", "CSS3", "JavaScript", "JQuery", "PHP", "MySQL"],
-        "github": "https://www.github.com",
-        "demo": ""
+        "languages": ["HTML5", "CSS3", "JavaScript", "JQuery", "Bootstrap", "PHP", "MySQL"],
+        "github": "https://github.com/KyawMinTun-96",
+        "demo": "https://github.com/KyawMinTun-96/news.mm"
     },
 
     {
         "id" : 4,
-        "title" : "Lorem ipsum dolor sit, amet consectetur adipisicing.r",
+        "title" : "Jewellery Online Shop",
         "content" : "Lorem ipsum dolor sit amet consectetur. Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem, eveniet.",
         "languages": ["HTML5", "CSS3", "JavaScript", "JQuery", "PHP", "MySQL"],
-        "github": "https://www.github.com",
-        "demo": ""
+        "github": "https://github.com/KyawMinTun-96",
+        "demo": "https://github.com/KyawMinTun-96/Jewellery"
     },
 
     {
         "id" : 5,
-        "title" : "Lorem ipsum dolor sit, amet consectetur adipisicing.e",
+        "title" : "Travel and Tour Project",
         "content" : "Lorem ipsum dolor sit amet consectetur. Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem, eveniet.",
         "languages": ["HTML5", "CSS3", "JavaScript", "JQuery", "PHP", "MySQL"],
-        "github": "https://www.github.com",
-        "demo": ""
+        "github": "https://github.com/KyawMinTun-96",
+        "demo": "https://github.com/KyawMinTun-96/Travel-and-Tour"
     },
 
     {
         "id" : 6,
-        "title" : "Lorem ipsum dolor sit, amet consectetur adipisicing.",
+        "title" : "Hotel Website Project",
         "content" : "Lorem ipsum dolor sit amet consectetur. Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem, eveniet.",
         "languages": ["HTML5", "CSS3", "JavaScript", "JQuery", "PHP", "MySQL"],
-        "github": "https://www.github.com",
-        "demo": ""
+        "github": "https://github.com/KyawMinTun-96",
+        "demo": "https://github.com/KyawMinTun-96/hotel.mm"
     },
 
     {
         "id" : 7,
-        "title" : "Lorem ipsum dolor sit, amet consectetur adipisicing.en",
+        "title" : "Laravel Project",
         "content" : "Lorem ipsum dolor sit amet consectetur. Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem, eveniet.",
-        "languages": ["HTML5", "CSS3", "JavaScript", "JQuery", "PHP", "MySQL"],
-        "github": "https://www.github.com",
-        "demo": ""
+        "languages": ["HTML5", "CSS3", "JavaScript", "JQuery", "PHP", "MySQL", "Laravel framework"],
+        "github": "https://github.com/KyawMinTun-96",
+        "demo": "https://github.com/KyawMinTun-96/Laravel"
     },
-
     {
-        "id" : 8,
-        "title" : "Lorem ipsum dolor sit, amet consectetur adipisicing.ht",
+        "id" : 7,
+        "title" : "Simple Blog Project",
         "content" : "Lorem ipsum dolor sit amet consectetur. Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem, eveniet.",
         "languages": ["HTML5", "CSS3", "JavaScript", "JQuery", "PHP", "MySQL"],
-        "github": "https://www.github.com",
-        "demo": ""
-    },
-
-    {
-        "id" : 9,
-        "title" : "Lorem ipsum dolor sit, amet consectetur adipisicing.e",
-        "content" : "Lorem ipsum dolor sit amet consectetur. Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem, eveniet.",
-        "languages": ["HTML5", "CSS3", "JavaScript", "JQuery", "PHP", "MySQL"],
-        "github": "https://www.github.com",
-        "demo": ""
-    },
-
-    {
-        "id" : 10,
-        "title" : "Lorem ipsum dolor sit, amet consectetur adipisicing.",
-        "content" : "Lorem ipsum dolor sit amet consectetur. Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem, eveniet.",
-        "languages": ["HTML5", "CSS3", "JavaScript", "JQuery", "PHP", "MySQL"],
-        "github": "https://www.github.com",
-        "demo": ""
+        "github": "https://github.com/KyawMinTun-96",
+        "demo": "https://github.com/KyawMinTun-96/simple-blog"
     }
 ]
