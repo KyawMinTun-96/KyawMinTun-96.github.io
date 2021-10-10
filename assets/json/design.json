@@ -2,13 +2,13 @@
 
     {
         "id" : 1,
-        "title": "Travel & Tour",
-        "image" : "tour-list_01.png"
+        "title": "One Mart",
+        "image" : "one_mart.png"
     },
     {
         "id" : 2,
         "title": "Zfreeti Hotel",
-        "image" : "hotel.jpg"
+        "image" : "zfreeti_hotel.png"
     },
     {
         "id" : 3,
@@ -17,38 +17,28 @@
     },
     {
         "id" : 4,
-        "title": "Portfolio",
-        "image" : "portfolio.jpg"
+        "title": "Previous Portfolio",
+        "image" : "old_portfolio.png"
     },
     {
         "id" : 5,
-        "title": "Travel & Tour",
-        "image" : "projects_01.png"
+        "title": "New Portfolio",
+        "image" : "new_portfolio.png"
     },
     {
         "id" : 6,
         "title": "Travel & Tour",
-        "image" : "tour-list_01.png"
+        "image" : "travel_and_tour1.png"
     },
     {
         "id" : 7,
         "title": "Travel & Tour",
-        "image" : "tour-list_01.png"
+        "image" : "travel_and_tour_dest.png"
     },
     {
         "id" : 8,
-        "title": "Travel & Tour",
-        "image" : "travel_tour.jpg"
-    },
-    {
-        "id" : 9,
-        "title": "Travel & Tour",
-        "image" : "travel_destination.jpg"
-    },
-    {
-        "id" : 10,
-        "title": "Travel & Tour",
-        "image" : "tour-list_01.png"
+        "title": "Internal Document Management",
+        "image" : "idms.png"
     }
 
 ]
