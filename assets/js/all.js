@@ -180,84 +180,277 @@ deviceChange(mediaQuery);
 
 /*=================Experiences=================*/ 
 $(document).ready(function() {
-
-    function skillLoad() {
-        $('#load-content').load('education.html');
-    }
-
-    skillLoad();
-
-    $('#tabEdu').click(function() {
-        $('#load-content').load('education.html');
-    });
-
-    $('#tabCer').click(function() {
-        $('#load-content').load('certificate.html');
-    });
-
-    $('#tabDev').click(function() {
-        $('#load-content').load('development.html');
-    });
-
-    $('#tabSkl').click(function() {
-        $('#load-content').load('skills.html');
-    });
-
-    $('#tabExp').click(function() {
-        $('#load-content').load('experiences.html');
-    });
-
-    $('#tabTol').click(function() {
-        $('#load-content').load('tools.html');
-    });
-
-
-
-
-
-    /*=============Project tab===============*/
-    function loadProj() {
-        $('#load-card').load('projects.html');
-    }
-
-    loadProj();
-
-    $('#loadProj').click(function() {
-        $('#load-card').load('projects.html');
-    });
-
-    $('#loadDes').click(function() {
-        
-        $('#load-card').load('design.html');
-
-    });
-
-
-    // project active 
-    $('.project-tab').on('click', '.proj-btn', function(e) {
-
-        e.preventDefault();
-
-        $('.proj-btn').removeClass('proj-active');
-        $(this).addClass('proj-active');
-
-    });
-
-
-
-
-
-    // experiance active 
-    $('.skill-tab').on('click', '.tab-btn', function(e) {
-
-        e.preventDefault();
-
-        $('.tab-btn').removeClass('highlight');
+    $('.tab-btn').click(function() {
+        $(".tabSkill").removeClass('tabSkill-active');
+        $(".tabSkill[data-id='"+$(this).attr('data-id')+"']").addClass("tabSkill-active");
+        $(".tab-btn").removeClass('highlight');
         $(this).addClass('highlight');
+    });
+});
+
+
+/*=================Project tab==================*/
+    $(document).ready(function() {
+
+        $('.proj-btn').click(function() {
+
+            $(".tab").removeClass('tab-active');
+            $(".tab[data-id='"+$(this).attr('data-id')+"']").addClass("tab-active");
+            $(".proj-btn").removeClass('proj-active');
+            $(this).addClass('proj-active');
+
+        });
 
     });
 
-});
+
+    function displayProject() {
+
+        $.ajax({
+
+            url: "assets/json/projects.json",
+            dataType: "json",
+            method: "GET",
+            success: function(data) {
+
+                var output = "";
+
+                for (var i = 0; i < data.length; i++) {
+
+                    output += 
+                    `<div class="card animate__animated animate__flipInY">
+                        <div class="card-body">
+                            <div class="card-header">
+                                <a href="` + data[i].github + `" title="github" target="_blank"><i class="fa fa-github" aria-hidden="true"></i></a>
+                                <a href="` + data[i].demo + `" title="projects" target="_blank"><i class="fa fa-link" aria-hidden="true"></i></a>
+                            </div>
+                            <p class="title">` + data[i].title + `</p>
+
+                            <div class="description">
+                                <p>` + data[i].content + `</p>
+                            </div>
+                        </div>
+
+                        <div class="card-footer">
+                            <ul>
+                                <li>` + data[i].languages.join(', ') + ' ' + `</li>
+                            </ul>
+                        </div>
+
+                    </div>`;
+
+                }
+                $('#dataProj').append(output);
+
+
+                $(document).ready(function() {
+
+                    if($(window).width() > 1024) {
+
+                        pjSec = $('.projects-sec');
+                        $.each(pjSec, function() {
+                            $(this)
+                            .find('.card')
+                            .slice(6)
+                            .hide(); 
+                        });
+
+                        $('.load-btn').click(function(e) {
+
+                            e.preventDefault();
+
+                            $(this).parent().find(".card:hidden").slice(0, 3).fadeIn('fast');
+
+                        });
+
+                    }
+                    
+                    if($(window).width() > 768 && $(window).width() <= 1024 ) {
+
+                        pjSec = $('.projects-sec');
+                        $.each(pjSec, function() {
+                            $(this)
+                            .find('.card')
+                            .slice(4)
+                            .hide(); 
+                        });
+
+                        $('.load-btn').click(function(e) {
+
+                            e.preventDefault();
+
+                            $(this).parent().find(".card:hidden").slice(0, 2).fadeIn('fast');
+
+                        });
+
+                    }
+                
+                    if($(window).width() <= 768) {
+
+                        pjSec = $('.projects-sec');
+                        $.each(pjSec, function() {
+                            $(this)
+                            .find('.card')
+                            .slice(4)
+                            .hide(); 
+                        });
+
+                        $('.load-btn').click(function(e) {
+
+                            e.preventDefault();
+
+                            $(this).parent().find(".card:hidden").slice(0, 2).fadeIn('fast');
+
+                        });
+
+                    }
+                
+                });
+                
+            },
+            error: function(error){
+                console.log(error)
+            }
+
+        });
+    }
+    displayProject();
+
+    function loadImage() {
+
+        $.ajax({
+
+            url: 'assets/json/design.json',
+            method: 'GET',
+            dataType: "json",
+            success:function(data) {
+
+                let output = '';
+
+                for(let i = 0; i < data.length; i++) {
+                    
+                    output += `
+                    <div class="card animate__animated animate__flipInX">
+                        <div class="card-image">
+                            <img src="assets/imgs/designs/` + data[i].image + `" alt="design image">
+                        </div>
+                        
+                        <button type="button" data-img="` + data[i].image + `" data-name="` + data[i].title + `" class="view-btn"><i class="fa fa-eye"></i></button>
+                    </div>
+                    `;
+                }
+
+                $('.design').append(output);
+
+
+                $(document).ready(function() {
+
+                    if($(window).width() <= 768) {
+
+                        design = $('.design');
+                        $.each(design, function() {
+                            $(this)
+                            .find('.card')
+                            .slice(6)
+                            .hide(); 
+                        });
+
+                        $('.load-btn').click(function(e) {
+
+                            e.preventDefault();
+
+                            $(this).parent().find(".card:hidden").slice(0, 3).fadeIn('fast');
+
+                        });
+
+                    }
+
+                    if($(window).width() > 1024) {
+
+                        design = $('.design');
+                        $.each(design, function() {
+                            $(this)
+                            .find('.card')
+                            .slice(8)
+                            .hide(); 
+                        });
+
+                        $('.load-btn').click(function(e) {
+
+                            e.preventDefault();
+
+                            $(this).parent().find(".card:hidden").slice(0, 4).fadeIn('fast');
+
+                        });
+                    }
+
+                    if($(window).width() > 768 && $(window).width() <= 1024 ) {
+
+                        design = $('.design');
+                        $.each(design, function() {
+                            $(this)
+                            .find('.card')
+                            .slice(6)
+                            .hide(); 
+                        });
+
+                        $('.load-btn').click(function(e) {
+
+                            e.preventDefault();
+
+                            $(this).parent().find(".card:hidden").slice(0, 3).fadeIn('fast');
+
+                        });
+
+                    }
+
+
+                    $('.card').on('click', '.view-btn', function() {
+
+                        let image = $(this).data('img');
+                        let name = $(this).data('name');
+
+                        $('.model').css({
+                            'z-index': 999999999,
+                            'opacity': 1
+                        });
+                        $('body').addClass('loading');
+
+
+                        /*--------model box-------*/
+                        const mTitle = document.querySelector('.model-title #title');
+                        const mImage = document.getElementById('design-image');
+                        mTitle.textContent = name;
+                        mImage.src = 'assets/imgs/designs/' + image;
+
+                
+
+                        $('.close-btn').click(function() {
+
+                            $('.model').css({
+                                'z-index': -1,
+                                'opacity': 0
+                            });
+
+                            $('body').removeClass('loading');
+
+                        });
+
+                    });
+            
+                });
+            },
+            error: function(error) {
+                console.log(`Error: ${error}`);
+            }
+
+        });
+    }
+	loadImage();
+
+
+
+
 
 
 

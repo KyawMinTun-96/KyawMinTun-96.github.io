@@ -465,6 +465,13 @@
 }
 
 
+.tabSkill{
+	display: none;
+}
+
+.tabSkill-active{
+	display: block;
+}
 
 
 
@@ -765,6 +772,14 @@
 
 .card .view-btn:hover > i{
 	opacity: 0.8;
+}
+
+.tab{
+	display: none;
+}
+
+.tab-active{
+	display: block;
 }
 
 
