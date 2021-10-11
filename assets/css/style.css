@@ -426,9 +426,9 @@
 	font-family: var(--font-family5);
 }
 
-.description ul li {
+.description ul > li {
 	font-family: var(--font-family4);
-	font-size: 16px;
+	font-size: 14px;
 	color: #a8b2d1;
 	line-height: 1.5;
 	margin-bottom: 10px;
@@ -437,7 +437,7 @@
 	padding-left: 15px;
 }
 
-.description ul li::before {
+.description ul > li::before {
 	position: absolute;
 	content: '\f0da';
 	font-family: FontAwesome;
@@ -456,14 +456,13 @@
 .description ul.skill_list {
 	display: grid;
 	gap: 10px;
-	grid-template-columns: repeat(2, minmax(140px, 100px));
+	grid-template-columns: repeat(2, minmax(150px, 100px));
 }
 
 .description .skill_list li {
 	margin-bottom: 0;
-	font-size: 12px;
+	font-size: 14px;
 }
-
 
 
 
