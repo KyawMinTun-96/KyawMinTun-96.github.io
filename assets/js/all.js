@@ -469,9 +469,21 @@ form.addEventListener('submit', e => {
         }
         )
         .then(
-            response => alert("Thanks for Contacting me..! I Will Contact You Soon...") +
-            document.getElementById('reset').reset()
-            )
+            
+            response => {
+
+                Swal.fire({
+                    position: 'center',
+                    icon: 'success',
+                    title: 'Thanks for Contacting me..! I Will Contact You Soon...',
+                    confirmButtonColor: '#3085d6'
+                })
+
+                form.reset()
+
+            }
+        
+        )
         .catch(
             error => console.error('Error!', error.message)
             )

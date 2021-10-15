@@ -12,6 +12,11 @@
 	position: relative;
 }
 
+.swal2-title {
+	font-size: 1rem !important;
+}
+
+
 
 /*------------Preloader----------------*/
 .loading {
