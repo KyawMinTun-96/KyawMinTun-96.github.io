@@ -497,7 +497,6 @@ form.addEventListener('submit', e => {
 window.addEventListener('load', function() {
 
     setTimeout(removeLoader, 2000);
-    dateCalculate();
     
 });
 
@@ -587,5 +586,7 @@ function dateCalculate() {
 
     return document.getElementById("exp").innerHTML = expString; 
              
-  }
+}
+
+dateCalculate();
 
