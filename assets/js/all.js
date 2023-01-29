@@ -517,7 +517,7 @@ function dateCalculate() {
     var sDate = new Date('2021-11-26');
 
     //get the current date from the system
-    var now = new Date();
+    var now = new Date('2023-1-26');
     
     //extract the year, month, and date from user date input
     var sDateYear = sDate.getYear();
@@ -569,7 +569,7 @@ function dateCalculate() {
     if ( (exp.years > 0) && (exp.months > 0) && (exp.days > 0) )
        expString = exp.years + " years, " + exp.months + " months, and " + exp.days + " days";
     else if ( (exp.years == 0) && (exp.months == 0) && (exp.days > 0) )
-       expString = "Only " + exp.days + " days";
+       expString = exp.days + " days";
     //when current month and date is same as birth date and month
     else if ( (exp.years > 0) && (exp.months == 0) && (exp.days == 0) )
        expString = exp.years +  " years";
