@@ -68,5 +68,21 @@
         "languages": ["HTML5", "CSS3", "JavaScript", "JQuery", "PHP", "MySQL"],
         "github": "https://github.com/KyawMinTun-96",
         "demo": "https://github.com/KyawMinTun-96/simple-blog"
+    },
+    {
+        "id" : 8,
+        "title" : "Internal Document Management Project",
+        "content" : "Lorem ipsum dolor sit amet consectetur. Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem, eveniet.",
+        "languages": ["HTML5", "CSS3", "JavaScript", "JQuery", "PHP", "MySQL"],
+        "github": "https://github.com/KyawMinTun-96",
+        "demo": "https://github.com/KyawMinTun-96/IDMS"
+    },
+    {
+        "id" : 9,
+        "title" : "Employee Management System Project",
+        "content" : "Lorem ipsum dolor sit amet consectetur. Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem, eveniet.",
+        "languages": ["HTML5", "CSS3", "JavaScript", "JQuery", "Python"],
+        "github": "https://github.com/KyawMinTun-96",
+        "demo": "https://github.com/KyawMinTun-96/EmployeeManagementSystem"
     }
 ]

@@ -39,6 +39,16 @@
         "id" : 8,
         "title": "Internal Document Management",
         "image" : "idms.png"
+    },
+    {
+        "id" : 9,
+        "title": "Employee Management System",
+        "image": "ems_home.png"
+    },
+    {
+        "id" : 10,
+        "title": "Employee Management System",
+        "image": "ems_department.png"
     }
 
 ]
