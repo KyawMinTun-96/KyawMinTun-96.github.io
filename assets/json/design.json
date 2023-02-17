@@ -32,8 +32,8 @@
     },
     {
         "id" : 7,
-        "title": "Travel & Tour",
-        "image" : "travel_and_tour_dest.png"
+        "title": "Simple Student Registration",
+        "image" : "SR.png"
     },
     {
         "id" : 8,
@@ -43,12 +43,12 @@
     {
         "id" : 9,
         "title": "Employee Management System",
-        "image": "ems_home.png"
+        "image": "ems.png"
     },
     {
         "id" : 10,
-        "title": "Employee Management System",
-        "image": "ems_department.png"
+        "title": "Simple Inventory System",
+        "image": "simple_inventory.png"
     }
 
 ]

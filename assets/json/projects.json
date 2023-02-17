@@ -71,18 +71,26 @@
     },
     {
         "id" : 8,
-        "title" : "Internal Document Management Project",
+        "title" : "Simple Inventory System Project",
         "content" : "Lorem ipsum dolor sit amet consectetur. Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem, eveniet.",
-        "languages": ["HTML5", "CSS3", "JavaScript", "JQuery", "PHP", "MySQL"],
+        "languages": ["C#", "MSSQL SERVER"],
         "github": "https://github.com/KyawMinTun-96",
-        "demo": "https://github.com/KyawMinTun-96/IDMS"
+        "demo": "https://github.com/KyawMinTun-96/SimpleInventorySystem"
     },
     {
         "id" : 9,
         "title" : "Employee Management System Project",
         "content" : "Lorem ipsum dolor sit amet consectetur. Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem, eveniet.",
-        "languages": ["HTML5", "CSS3", "JavaScript", "JQuery", "Python"],
+        "languages": ["HTML5", "CSS3", "JavaScript", "JQuery", "Python", "Django"],
         "github": "https://github.com/KyawMinTun-96",
         "demo": "https://github.com/KyawMinTun-96/EmployeeManagementSystem"
+    },
+    {
+        "id" : 10,
+        "title" : "Simple Student Registration",
+        "content" : "Lorem ipsum dolor sit amet consectetur. Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem, eveniet.",
+        "languages": ["Python", "Tkinter"],
+        "github": "https://github.com/KyawMinTun-96",
+        "demo": "https://github.com/KyawMinTun-96/Simple_Student_Registration_using_Tkinter-"
     }
 ]
