@@ -512,12 +512,12 @@ function removeLoader() {
 }
 
 
-function dateCalculate() {
-
-    var sDate = new Date('2021-11-26');
+function dateCalculate(startDate, endDate, ID) {
+    
+    var sDate = new Date(startDate);
 
     //get the current date from the system
-    var now = new Date('2023-1-26');
+    var now = new Date(endDate);
     
     //extract the year, month, and date from user date input
     var sDateYear = sDate.getYear();
@@ -535,11 +535,14 @@ function dateCalculate() {
   
     //get years
     yearExp = currentYear - sDateYear;
-	
+    
+
+
     //get months
     if (currentMonth >= sDateMonth)
       //get months when current month is greater
       var monthExp = currentMonth - sDateMonth;
+       
     else {
       yearExp--;
       var monthExp = 12 + currentMonth - sDateMonth;
@@ -558,6 +561,7 @@ function dateCalculate() {
         yearExp--;
       }
     }
+
     //group the age in a single variable
     exp = {
     years: yearExp,
@@ -584,9 +588,15 @@ function dateCalculate() {
     //when current date is same as dob(date of birth)
     else expString = "Something"; 
 
-    return document.getElementById("exp").innerHTML = expString; 
+    return document.getElementById(ID).innerHTML = expString; 
              
 }
 
-dateCalculate();
 
+
+
+dateCalculate('2021-11-26', '2023-1-26','galaxy_exp');
+
+dateCalculate('2023-03-28', Date(), 'nex4_exp');
+
+//document.getElementById('nex4_exp').innerHTML = new Date(now());
