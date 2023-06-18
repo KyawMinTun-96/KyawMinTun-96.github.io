@@ -598,5 +598,3 @@ function dateCalculate(startDate, endDate, ID) {
 dateCalculate('2021-11-26', '2023-1-26','galaxy_exp');
 
 dateCalculate('2023-03-28', Date(), 'nex4_exp');
-
-//document.getElementById('nex4_exp').innerHTML = new Date(now());
