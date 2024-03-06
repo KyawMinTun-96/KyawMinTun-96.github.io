@@ -502,7 +502,7 @@ window.addEventListener('load', function () {
 
 function removeLoader() {
 
-    $('#preloader').fadeOut(500, function () {
+    $('#preloader').fadeOut(.1, function () {
 
         $('#preloader').remove();
         $('.loading').removeClass();
