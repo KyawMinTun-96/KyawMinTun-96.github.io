@@ -495,14 +495,14 @@ form.addEventListener('submit', e => {
 /*===============preloader===================*/
 window.addEventListener('load', function () {
 
-    setTimeout(removeLoader, 2000);
+    setTimeout(removeLoader, 2);
 
 });
 
 
 function removeLoader() {
 
-    $('#preloader').fadeOut(.1, function () {
+    $('#preloader').fadeOut(500, function () {
 
         $('#preloader').remove();
         $('.loading').removeClass();
