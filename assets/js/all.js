@@ -448,6 +448,117 @@ function loadImage() {
 }
 loadImage();
 
+function displayBlog() {
+
+    $.ajax ({
+        url: "assets/json/blog.json",
+        dataType: "json",
+        method: "GET",
+        success: function (data) {
+
+            var output = "";
+
+            for (var i = 0; i < data.length; i++) {
+
+                output +=
+                    `<div class="card animate__animated animate__flipInY">
+                        <div class="card-body">
+                            <div class="card-header">
+                                <a href="` + data[i].title + `" title="github" target="_blank"><i class="fa fa-github" aria-hidden="true"></i></a>
+                                <a href="` + data[i].title + `" title="projects" target="_blank"><i class="fa fa-link" aria-hidden="true"></i></a>
+                            </div>
+                            <p class="title">` + data[i].title + `</p>
+
+                            <div class="description">
+                                <p>` + data[i].content + `</p>
+                            </div>
+                        </div>
+
+                        <div class="card-footer">
+                            <ul>
+                                <li>` + ' ' + `</li>
+                            </ul>
+                        </div>
+
+                    </div>`;
+
+            }
+            $('#dataBlog').append(output);
+
+
+            $(document).ready(function () {
+
+                if ($(window).width() > 1024) {
+
+                    pjSec = $('.blg');
+                    $.each(pjSec, function () {
+                        $(this)
+                            .find('.card')
+                            .slice(6)
+                            .hide();
+                    });
+
+                    $('.load-btn').click(function (e) {
+
+                        e.preventDefault();
+
+                        $(this).parent().find(".card:hidden").slice(0, 3).fadeIn('fast');
+
+                    });
+
+                }
+
+                if ($(window).width() > 768 && $(window).width() <= 1024) {
+
+                    pjSec = $('.blg');
+                    $.each(pjSec, function () {
+                        $(this)
+                            .find('.card')
+                            .slice(4)
+                            .hide();
+                    });
+
+                    $('.load-btn').click(function (e) {
+
+                        e.preventDefault();
+
+                        $(this).parent().find(".card:hidden").slice(0, 2).fadeIn('fast');
+
+                    });
+
+                }
+
+                if ($(window).width() <= 768) {
+
+                    pjSec = $('.blg');
+                    $.each(pjSec, function () {
+                        $(this)
+                            .find('.card')
+                            .slice(4)
+                            .hide();
+                    });
+
+                    $('.load-btn').click(function (e) {
+
+                        e.preventDefault();
+
+                        $(this).parent().find(".card:hidden").slice(0, 2).fadeIn('fast');
+
+                    });
+
+                }
+
+            });
+
+        },
+        error: function (error) {
+            console.log(error)
+        }
+    });
+}
+
+// displayBlog();
+
 
 
 
@@ -455,16 +566,32 @@ loadImage();
 
 
 /*=================Form Request====================*/
-const scriptURL = 'https://script.google.com/macros/s/AKfycbyVYVf4vVqnpMY3FKHrWN_GqT_-iib25RdwyzgOhcWIIuXGTuKxHBMHzhDyfKW0o9McLg/exec';
-const form = document.forms['form-data'];
+const scriptURL = 'https://prod-41.southeastasia.logic.azure.com:443/workflows/bd2ac059878a44b5a9b5716687759cab/triggers/manual/paths/invoke?api-version=2016-06-01&sp=%2Ftriggers%2Fmanual%2Frun&sv=1.0&sig=6k-iZ5Kn8PNR04P5S-1OphbtUtl6vtiJ0CqsgQjfIgM';
 
+const form = document.forms['form-data'];
 form.addEventListener('submit', e => {
 
     e.preventDefault()
+
+    // Get form data
+    const formData = new FormData(document.getElementById('reset'));
+
+    // Convert FormData to JSON
+    const jsonData = {};
+
+    formData.forEach((value, key) => {
+
+        jsonData[key] = value;
+
+    });
+
     fetch(
             scriptURL, {
                 method: 'POST',
-                body: new FormData(form)
+                headers: {
+                    'Content-Type': 'application/json',
+                  },
+                body: JSON.stringify(jsonData),
             }
         )
         .then(
@@ -608,3 +735,106 @@ dateCalculate('2023-03-28', Date(), 'nex4_exp');
 
 
 // Get information Get Website Visitor info
+document.addEventListener('DOMContentLoaded', function() {
+    // Function to send data to your server
+    function sendVisitorInfo(data) {
+        // Replace the following URL with the endpoint on your server to handle the data
+        const endpoint = 'https://prod-50.southeastasia.logic.azure.com:443/workflows/efc3a04d12a34a52b9b8c8720c5756db/triggers/manual/paths/invoke?api-version=2016-06-01&sp=%2Ftriggers%2Fmanual%2Frun&sv=1.0&sig=-Y6B4QDJoLFJ3zto74rofhqk2emUnaBpnZl-cryJeVE';
+        
+        // Use fetch API to send data to the server
+        fetch(endpoint, {
+            method: 'POST',
+            headers: {
+            'Content-Type': 'application/json',
+            },
+            body: JSON.stringify(data),
+        })
+        // .then(response => {
+        //     if (!response.ok) {
+
+        //         throw new Error('Network response was not ok');
+
+        //     }
+
+        //     return response.json();
+        // })
+        // .then(data => {
+
+        //     console.log('Data sent successfully:', data);
+
+        // })
+
+    }
+
+    // Get visitor information
+    const visitorInfo = {
+        userAgent: navigator.userAgent,
+        language: navigator.language,
+        platform: navigator.platform,
+        cookiesEnabled: navigator.cookieEnabled,
+        online: navigator.onLine,
+        javaEnabled: navigator.javaEnabled(),
+        doNotTrack: navigator.doNotTrack,
+        hardwareConcurrency: navigator.hardwareConcurrency,
+        maxTouchPoints: navigator.maxTouchPoints,
+        plugins: getPluginInfo(),
+        screen: {
+          width: window.screen.width,
+          height: window.screen.height,
+          pixelDepth: window.screen.pixelDepth,
+        },
+        viewport: {
+          width: window.innerWidth,
+          height: window.innerHeight,
+        },
+        location: {
+          href: window.location.href,
+          protocol: window.location.protocol,
+          host: window.location.host,
+          pathname: window.location.pathname,
+          search: window.location.search,
+        },
+        timestamp: new Date().toISOString(),
+    };
+
+
+    // Function to get plugin information
+    function getPluginInfo() {
+
+        const plugins = [];
+        for (let i = 0; i < navigator.plugins.length; i++) {
+
+            plugins.push({
+            name: navigator.plugins[i].name,
+            description: navigator.plugins[i].description,
+            });
+
+        }
+
+        return plugins;
+    }
+
+    sendVisitorInfo(visitorInfo);
+
+});
+
+
+
+
+
+// Get the user's current location
+// navigator.geolocation.getCurrentPosition(
+//     function(position) {
+//         const location = {
+//         latitude: position.coords.latitude,
+//         longitude: position.coords.longitude
+//         };
+//     },
+//     function(error) {
+
+//         console.error('Error getting location:', error.message);
+
+//     }
+// );
+
+

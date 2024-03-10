@@ -1,0 +1,15 @@
+[
+    {
+        "id": 1,
+        "title": "Microsoft Power Platform",
+        "content": "Lorem ipsum dolor sit amet consectetur. Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem, eveniet.",
+        "image": "zfreeti_hotel.png"
+    },
+    {
+        "id": 2,
+        "title": "Azure DevOps for Power Platform",
+        "content": "Lorem ipsum dolor sit amet consectetur. Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem, eveniet.",
+        "image": "zfreeti_hotel.png"
+    }
+
+]

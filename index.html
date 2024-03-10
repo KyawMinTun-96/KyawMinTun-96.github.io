@@ -46,7 +46,7 @@
 						<li class="nav-item"><a href="#about" class="nav-link active">About</a></li>
 						<li class="nav-item"><a href="#experience" class="nav-link">Experience</a></li>
 						<li class="nav-item"><a href="#projects" class="nav-link">Projects</a></li>
-						<li class="nav-item"><a href="#blog" class="nav-link">Blog</a></li>
+						<li class="nav-item"><a href="#projects" class="nav-link">Blog</a></li>
 						<li class="nav-item"><a href="#contact" class="nav-link">Contact</a></li>
 					</ul>
 				</div>
@@ -71,7 +71,7 @@
 						<li class="menu-item"><a href="#about" class="menu-link active">About</a></li>
 						<li class="menu-item"><a href="#experience" class="menu-link">Education</a></li>
 						<li class="menu-item"><a href="#projects" class="menu-link">Projects</a></li>
-						<li class="menu-item"><a href="#blog" class="menu-link">Blog</a></li>
+						<li class="menu-item"><a href="#projects" class="menu-link">Blog</a></li>
 						<li class="menu-item"><a href="#contact" class="menu-link">Contact</a></li>
 					</ul>
 
@@ -356,6 +356,7 @@
 						<div class="project-tab">
 							<button type="button" class="proj-btn proj-active" data-id="loadProj">Projects</button>
 							<button type="button" class="proj-btn" data-id="loadDes">Design</button>
+							<button type="button" class="proj-btn" data-id="loadBlog">Blog</button>
 						</div>
 
 						
@@ -370,6 +371,13 @@
 
 							<div class="design" id="dataDesign"></div>
 							<button type="button" class="load-btn">Show More</button>				
+
+						</div>
+
+						<div class="tab" data-id="loadBlog">
+
+							<div class="blg" id="dataBlog"></div>
+							<!-- <button type="button" class="load-btn">Show More</button>				 -->
 
 						</div>
 
@@ -394,12 +402,12 @@
 		
 							<form name="form-data" method="post" class="form" id="reset">
 								<p>
-									<input type="text" name="Username" placeholder="full name" required autocomplete="off">
-									<input type="email" name="Email" placeholder="email address" required autocomplete="off">
+									<input type="text" name="Username" placeholder="full name" required>
+									<input type="email" name="Email" placeholder="email address" required>
 								</p>
-								<input type="text" name="Subject" placeholder="subject" required autocomplete="off">
+								<input type="text" name="Subject" placeholder="subject" required>
 
-								<textarea id="" cols="30" name="Message" rows="10" placeholder="Message" required autocomplete="off"></textarea>
+								<textarea id="" cols="30" name="Message" rows="10" placeholder="Message" required></textarea>
 
 								<div class="form-btn">
 									<input type="submit" name="submit" value="Send">
