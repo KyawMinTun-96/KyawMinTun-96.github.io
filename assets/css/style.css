@@ -452,6 +452,11 @@
 	line-height: 20px;
 }
 
+/* New code 2024-04-18 */
+.description ul > li > .dev_year {
+	color: var(--font-color8);
+}
+
 
 /*-----skills css------*/
 .description .skill_title {

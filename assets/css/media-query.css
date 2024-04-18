@@ -318,7 +318,7 @@
         color: var(--font-color2);
         text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
     }
-
+/* New Code Added 2024-04-18 */
     .social a i.bi {
         line-height: 35px !important;
     }
@@ -411,6 +411,10 @@
         font-size: 13px;
     }
 
+    .description ul.skill_list {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
 
 
     /*----------------PROJECT SEC-----------------*/
@@ -464,6 +468,11 @@
    /*----------------FOOTER SEC-----------------*/
     footer {
         padding: 60px 0 20px;
+    }
+
+    footer .main-social a i.bi {
+        vertical-align: middle;
+        line-height: 25px;
     }
 
 }

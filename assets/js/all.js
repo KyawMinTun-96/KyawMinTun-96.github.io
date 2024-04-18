@@ -708,7 +708,7 @@ function dateCalculate(startDate, endDate, ID) {
     else if ((exp.years == 0) && (exp.months > 0) && (exp.days > 0))
         expString = exp.months + " months and " + exp.days + " days";
     else if ((exp.years > 0) && (exp.months == 0) && (exp.days > 0))
-        expString = exp.years + " years, and" + exp.days + " days";
+        expString = exp.years + " years, and " + exp.days + " days";
     else if ((exp.years == 0) && (exp.months > 0) && (exp.days == 0))
         expString = exp.months + " months";
     //when current date is same as dob(date of birth)
