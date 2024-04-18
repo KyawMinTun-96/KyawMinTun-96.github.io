@@ -462,6 +462,7 @@
 	display: grid;
 	gap: 10px;
 	grid-template-columns: repeat(2, minmax(200px, 200px));
+	/* grid-template-columns: repeat(3, 1fr); */
 }
 
 .description .skill_list li {
