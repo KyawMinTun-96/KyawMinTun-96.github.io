@@ -219,7 +219,8 @@
 .skills {
 	margin-top: 20px;
 	display: grid;
-	grid-template-columns: repeat(2, minmax(140px, 100px));
+	/* grid-template-columns: repeat(2, minmax(140px, 100px)); Original Code */
+	grid-template-columns: repeat(2, 1fr); /*New Code*/
 	gap: 0 10px;
 	padding: 0;
 }
@@ -466,8 +467,8 @@
 .description ul.skill_list {
 	display: grid;
 	gap: 10px;
-	grid-template-columns: repeat(2, minmax(200px, 200px));
-	/* grid-template-columns: repeat(3, 1fr); */
+	/* grid-template-columns: repeat(2, minmax(200px, 200px)); Original Code*/
+	grid-template-columns: repeat(3, 1fr); /* New Code*/
 }
 
 .description .skill_list li {

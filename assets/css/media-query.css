@@ -96,6 +96,10 @@
         font-size: 13px;
     }
 
+    .description ul.skill_list {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
 
     /*----------------PROJECT SEC-----------------*/
     .my-projects h2::after {
