@@ -783,6 +783,29 @@
 }
 
 
+.card_image {
+	background-color: transparent;
+	width: 100%;
+	height: 200px;
+	overflow: hidden;
+	margin: 20px 0;
+}
+
+.card_image > img {
+	width: 100%;
+}
+
+#read_more {
+	margin-top: 20px;
+	display: flex;
+	flex-direction: row-reverse;
+}
+
+#read_more button {
+	padding: 10px;
+}
+
+
 .card .view-btn:hover > i{
 	opacity: 0.8;
 }

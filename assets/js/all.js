@@ -463,23 +463,20 @@ function displayBlog() {
                 output +=
                     `<div class="card animate__animated animate__flipInY">
                         <div class="card-body">
-                            <div class="card-header">
-                                <a href="` + data[i].title + `" title="github" target="_blank"><i class="fa fa-github" aria-hidden="true"></i></a>
-                                <a href="` + data[i].title + `" title="projects" target="_blank"><i class="fa fa-link" aria-hidden="true"></i></a>
-                            </div>
-                            <p class="title">` + data[i].title + `</p>
+                            <p class="title" style="height:80px">` + data[i].title + `</p>
 
+                            <div class="card_image">
+                                <img src="assets/imgs/blogs/`+ data[i].image + `" title="This is a blog image">
+                            </div>
+                        
                             <div class="description">
                                 <p>` + data[i].content + `</p>
                             </div>
-                        </div>
 
-                        <div class="card-footer">
-                            <ul>
-                                <li>` + ' ' + `</li>
-                            </ul>
+                            <div id="read_more">
+                                <button>Read more</button>
+                            </div>
                         </div>
-
                     </div>`;
 
             }

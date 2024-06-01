@@ -3,10 +3,46 @@
         "id": 1,
         "title": "Microsoft Power Platform",
         "content": "Lorem ipsum dolor sit amet consectetur. Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem, eveniet.",
-        "image": "zfreeti_hotel.png"
+        "image": "Azure_DevOps.png"
     },
     {
         "id": 2,
+        "title": "Azure DevOps for Power Platform",
+        "content": "Lorem ipsum dolor sit amet consectetur. Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem, eveniet.",
+        "image": "zfreeti_hotel.png"
+    },
+    {
+        "id": 3,
+        "title": "Azure DevOps for Power Platform",
+        "content": "Lorem ipsum dolor sit amet consectetur. Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem, eveniet.",
+        "image": "Azure_DevOps.png"
+    },
+    {
+        "id": 4,
+        "title": "Microsoft Power Platform",
+        "content": "Lorem ipsum dolor sit amet consectetur. Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem, eveniet.",
+        "image": "zfreeti_hotel.png"
+    },
+    {
+        "id": 5,
+        "title": "Azure DevOps for Power Platform",
+        "content": "Lorem ipsum dolor sit amet consectetur. Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem, eveniet.",
+        "image": "zfreeti_hotel.png"
+    },
+    {
+        "id": 6,
+        "title": "Azure DevOps for Power Platform",
+        "content": "Lorem ipsum dolor sit amet consectetur. Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem, eveniet.",
+        "image": "zfreeti_hotel.png"
+    },
+    {
+        "id": 7,
+        "title": "Azure DevOps for Power Platform",
+        "content": "Lorem ipsum dolor sit amet consectetur. Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem, eveniet.",
+        "image": "zfreeti_hotel.png"
+    },
+    {
+        "id": 8,
         "title": "Azure DevOps for Power Platform",
         "content": "Lorem ipsum dolor sit amet consectetur. Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem, eveniet.",
         "image": "zfreeti_hotel.png"
