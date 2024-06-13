@@ -49,6 +49,21 @@
         "id" : 10,
         "title": "Simple Inventory System",
         "image": "simple_inventory.png"
+    },
+    {
+        "id" : 11,
+        "title": "Voyager Website",
+        "image": "voyager.jpg"
+    },
+    {
+        "id" : 12,
+        "title": "Travel Website",
+        "image": "travel.jpg"
+    },
+    {
+        "id" : 13,
+        "title": "Bus Ticket System",
+        "image": "bus_ticket_system.png"
     }
 
 ]
