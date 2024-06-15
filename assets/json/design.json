@@ -64,6 +64,11 @@
         "id" : 13,
         "title": "Bus Ticket System",
         "image": "bus_ticket_system.png"
+    },
+    {
+        "id" : 14,
+        "title": "Email Verification",
+        "image": "email_verification.png"
     }
 
 ]
