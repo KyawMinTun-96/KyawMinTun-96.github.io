@@ -69,6 +69,11 @@
         "id" : 14,
         "title": "Email Verification",
         "image": "email_verification.png"
+    },
+    {
+        "id" : 15,
+        "title": "Simple Blog System",
+        "image": "Simple Blog System.png"
     }
 
 ]

@@ -214,11 +214,28 @@ function displayProject() {
         success: function (data) {
 
             var output = "";
-
+            let animatePrj = ["animate__slideInRight", "animate__slideInDown", "animate__slideInLeft", "animate__slideInUp"]
+            let aniCountPrj = 0;
+            let directionPrj = 1;
             for (var i = 0; i < data.length; i++) {
 
+                if(i == 4) {
+                    directionPrj = -1;
+                }
+
+                if(aniCountPrj == 0) {
+
+                    directionPrj = 1;
+
+                }
+
+                if((aniCountPrj == 4 || aniCountPrj == 3 || aniCountPrj == 1 || aniCountPrj==2 || aniCountPrj == 0) && (directionPrj == -1)) {
+
+                    aniCountPrj -= 2;
+                    
+                }
                 output +=
-                    `<div class="card animate__animated animate__flipInY">
+                    `<div class="card animate__animated ${animatePrj[aniCountPrj]}">
                         <div class="card-body">
                             <div class="card-header">
                                 <a href="` + data[i].github + `" title="github" target="_blank"><i class="fa fa-github" aria-hidden="true"></i></a>
@@ -236,9 +253,13 @@ function displayProject() {
                                 <li>` + data[i].languages.join(', ') + ' ' + `</li>
                             </ul>
                         </div>
-
                     </div>`;
 
+                if((aniCountPrj == 3 || aniCountPrj == 1 || aniCountPrj==2 || aniCountPrj == 0) && (directionPrj == 1)) {
+
+                    aniCountPrj++;
+                    
+                }
             }
             $('#dataProj').append(output);
 
@@ -326,11 +347,29 @@ function loadImage() {
         success: function (data) {
 
             let output = '';
-
+            let animate = ["animate__slideInRight", "animate__slideInLeft", "animate__slideInUp", "animate__slideInDown"]
+            let aniCount = 0;
+            let direction = 1;
             for (let i = 0; i < data.length; i++) {
+                
+                if(i == 4) {
+                    direction = -1;
+                }
+
+                if(aniCount == 0) {
+
+                    direction = 1;
+
+                }
+
+                if((aniCount == 4 || aniCount == 3 || aniCount == 1 || aniCount==2 || aniCount == 0) && (direction == -1)) {
+
+                    --aniCount;
+                    
+                }
 
                 output += `
-                    <div class="card animate__animated animate__flipInX">
+                    <div class="card animate__animated ${animate[aniCount]}">
                         <div class="card-image">
                             <img src="assets/imgs/designs/` + data[i].image + `" alt="design image">
                         </div>
@@ -338,6 +377,13 @@ function loadImage() {
                         <button type="button" data-img="` + data[i].image + `" data-name="` + data[i].title + `" class="view-btn"><i class="fa fa-eye"></i></button>
                     </div>
                     `;
+
+
+                if((aniCount == 3 || aniCount == 1 || aniCount==2 || aniCount == 0) && (direction == 1)) {
+
+                    aniCount++;
+                    
+                }
             }
 
             $('.design').append(output);
