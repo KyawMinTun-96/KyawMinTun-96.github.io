@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/static/css/main.fd06d284.css",
+    "main.js": "/static/js/main.a7dda0d9.js",
+    "static/media/kmt_img.png": "/static/media/kmt_img.874c9aebfa888212a541.png",
+    "static/media/Roboto-Regular.ttf": "/static/media/Roboto-Regular.03523cf578d69fa92322.ttf",
+    "static/media/harlowsoliditalic.ttf": "/static/media/harlowsoliditalic.60f385330cb629314bcc.ttf",
+    "index.html": "/index.html",
+    "main.fd06d284.css.map": "/static/css/main.fd06d284.css.map",
+    "main.a7dda0d9.js.map": "/static/js/main.a7dda0d9.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.fd06d284.css",
+    "static/js/main.a7dda0d9.js"
+  ]
+}
