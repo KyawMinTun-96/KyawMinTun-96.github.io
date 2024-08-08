@@ -1,0 +1,475 @@
+/*----Desktop size------*/
+@media screen and (max-width: 1280px) {
+
+    .inner {
+        margin: 0 5%;
+    }
+
+    .main-inner {
+        margin: 0 10%;
+    }
+    
+
+    /* Experiences CSS */
+    .my-skill {
+        padding: 120px 0;
+    }
+
+
+}
+
+
+
+/*----Laptop size------*/
+@media screen and (max-width: 979px) {
+    
+    .main-inner {
+        margin: 0 7%;
+    }
+
+    /* .projects-sec {
+        grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    } */
+
+
+
+}
+
+
+
+
+
+
+
+
+
+/* Tablet Size */
+@media (max-width: 769px) {
+
+
+    /* Info CSS */
+    .info p:first-of-type {
+        margin-bottom: 30px !important;
+    }
+    
+    .info p:nth-child(3) {
+        line-height: 1.5;
+    }
+
+
+    /* About CSS */
+    .about {
+        display: block;
+    }
+
+    .my-info {
+        padding: 80px 0;
+    }
+
+    .my-info h2::after {
+        width: 75%;
+    }
+
+    .wrapper {
+        display: block;
+        margin: 0 auto;
+        max-width: 300px;
+        max-height: 280px;
+    }
+
+    .profile {
+        margin: 50px auto 0;
+        width: 70%;
+    }
+
+
+    /* Experiences CSS */
+    .my-skill {
+        padding: 80px 0;
+    }
+
+    .my-skill h2::after {
+        width: 75%;
+    }
+
+    .tab-btn span {
+        font-size: 13px;
+    }
+
+    .description span {
+        font-size: 13px;
+    }
+
+    .description ul.skill_list {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+
+    /* Projects CSS */
+    .my-projects h2::after {
+        width: 75%;
+    }
+
+    .model .model-inner {
+        top: 7%;
+    }
+
+
+
+    /* Contact CSS */
+    .my-contact {
+        padding: 80px 0;
+    }
+
+    .my-contact h2::after {
+        width: 75%;
+    }
+
+    .contact-sec {
+        display: block;
+    }
+
+    .contact-info .address{
+        margin-bottom: 50px;
+    }
+
+    .address li {
+        font-size: 13px;
+    }
+
+
+
+    /* Footer CSS */
+    footer {
+        padding: 40px 0 20px;
+        width: 100%;
+        height: 100%;
+    }
+
+    .main-social {
+        display: block;
+        margin: 0 auto;
+        width: 100%;
+        text-align: center;
+        position: unset;
+    }
+
+    .main-social::after {
+        display: none;
+    }
+
+}
+
+
+
+
+
+
+
+
+
+/* Mobile CSS */
+@media (max-width: 575px) {
+
+    .inner {
+        margin: 0 6%;
+    }
+
+    .model .model-inner {
+        top: 10%;
+        width: 85%;
+    }
+
+    /* Navbar */
+    .nav{
+        display: none;
+    }
+
+
+    .menu-btn {
+        display: block;
+    }
+
+    .mobile-nav {
+        display: block;
+        padding: 2rem 0;
+        background-color: var(--primary-bg);
+        position: fixed;
+        top: 0;
+        left: 100%;
+        width: 75%;
+        height: 100%;
+        z-index: 99998;
+        transition: all 0.1s ease;
+        -webkit-transition: all 0.1s ease;
+        -moz-transition: all 0.1s ease;
+        -ms-transition: all 0.1s ease;
+        -o-transition: all 0.1s ease;
+    }
+
+    .slide-nav {
+        box-shadow: -10px 0px 20px -10px rgba(2,12,27,0.7);
+        left: 25%;
+        transition: all 0.1s ease;
+        -webkit-transition: all 0.1s ease;
+        -moz-transition: all 0.1s ease;
+        -ms-transition: all 0.1s ease;
+        -o-transition: all 0.1s ease;
+    }
+
+    .hover {
+        z-index: 99999;
+    }
+
+    .profile {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 1.5rem;
+    }
+
+    .profile-img {
+        background-color: var(--secondary-bg);
+        width: 50px;
+        height: 50px;
+        overflow: hidden;
+        margin: 0 auto 1rem;
+        border-radius: 50%;
+        -webkit-border-radius: 50%;
+        -moz-border-radius: 50%;
+        -ms-border-radius: 50%;
+        -o-border-radius: 50%;
+    }
+
+    .profile-img img {
+        width: 55px;
+        margin-left: -2px;
+    }
+
+    .profile-name {
+        font-family: var(--font-family2);
+        color: var(--font-color2);
+        font-size: 1.3rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .profile-name span {
+        text-shadow: 2px 2px 1px rgba(0, 0, 0, 0.3);
+    }
+
+    .mobile-menu {
+        width: 100%;
+        margin-bottom: 3rem;
+    }
+
+    .menu-item {
+        padding: 0.5rem 1.3rem;
+        margin-bottom: 1rem;
+    }
+
+    .menu-link {
+        font-size: 1rem;
+        color: var(--font-color2);
+        font-family: var(--font-family5);
+    }
+
+    .active {
+        color: var(--font-color1);
+    }
+
+    .resume {
+        margin-bottom: 3rem;
+    }
+
+    .resume a {
+        font-family: var(--font-color1);
+        color: var(--font-color1);
+        font-size: 1rem;
+        padding: 0.7rem 1.5rem;
+        width: 3.5rem;
+        display: block;
+        margin: 0 auto;
+        border: 0.1rem solid var(--font-color1);
+        border-radius: 0.2rem;
+        -webkit-border-radius: 0.2rem;
+        -moz-border-radius: 0.2rem;
+        -ms-border-radius: 0.2rem;
+        -o-border-radius: 0.2rem;
+    }
+
+    .social {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        height:50px;
+        margin: 0 20% 3rem;
+    }
+
+    .social a {
+        display: inline-block;
+        text-align: center;
+        width: 30px;
+        height: 30px;
+        cursor: pointer;
+    }
+
+    .social a i {
+        line-height: 30px;
+        font-size: 1.3rem;
+        color: var(--font-color2);
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
+    }
+    /* New Code Added 2024-04-18 */
+    .social a i.bi {
+        line-height: 35px !important;
+    }
+
+    .scroll {
+        overflow: hidden;
+    }
+
+    body.blur #content > * {
+        filter: blur(2px) brightness(0.7);
+        transition: all 0.25s cubic-bezier(0.645,0.045,0.355,1);
+        pointer-events: none;
+        user-select: none;
+        -webkit-filter: blur(2px) brightness(0.7);
+    }
+
+
+    /* Info CSS */
+    .info p:first-of-type {
+        margin-bottom: 1rem;
+    }
+
+    .info p:nth-child(3) {
+        margin-bottom: 1.25rem;
+        margin-top: 0.5rem;
+    }
+
+    .info  p:last-of-type{
+        font-size: 16px;
+    
+    }
+
+    /* About CSS */
+    .my-info {
+        padding: 3.8rem 0;
+    }
+
+    .my-info h2::after {
+        width: 60%;
+    }
+
+    .about .content p{
+        font-size: 1rem;
+    }
+
+    .skills li {
+        font-size: 0.8rem;
+    }
+
+
+
+    /* Experiences CSS */
+    .my-skill {
+        padding: 60px 0;
+    }
+
+    .my-skill h2::after {
+        width: 50%;
+    }
+
+    .skill-sec {
+        flex-direction: column;
+    }
+
+    .skill-tab {
+        margin-bottom: 50px;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        overflow-x: scroll;
+    }
+
+    .tab-btn span {
+        font-size: 13px;
+    }
+
+    .skill-sec .description {
+        padding: 0;
+        margin-left: 0;
+    }
+
+    .description h3 {
+        font-size: 20px;
+    }
+
+    .description span {
+        font-size: 13px;
+    }
+
+    .description ul.skill_list {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    /* Projects CSS */
+    .my-projects h2::after {
+        width: 60%;
+    }
+
+    .projects-sec {
+        grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    }
+
+    .card-body .description {
+        font-size: 1rem;
+    }
+
+    .card-footer ul li {
+        font-size: 0.8rem;
+    }
+
+
+
+    /* Contact CSS */
+    .my-contact {
+        padding: 60px 0;
+    }
+
+    .my-contact h2::after {
+        width: 60%;
+    }
+
+    .contact-info p {
+        font-size: 1rem;
+    }
+
+    .address li {
+        font-size: 0.8rem;
+    }
+    .address li a {
+        font-size: 0.8rem;
+    }
+
+    .form p {
+        flex-direction: column;
+    }
+
+    .form p input:first-of-type {
+        margin-right: 0;
+    }
+
+
+    /* Footer CSS */
+    footer {
+        padding: 60px 0 20px;
+    }
+
+    footer .main-social a i.bi {
+        vertical-align: middle;
+        line-height: 25px;
+    }
+
+}
