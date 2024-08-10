@@ -1,30 +1,59 @@
-
+import { useState } from "react";
 
 function Experiences() {
+
+
+    const [activeTab, setActiveTab] = useState('tabEdu');
+
+    const handleTabClick = (tabName) => {
+        setActiveTab(tabName);
+    }
+
+
     return(
         <section id="experience" className="my-skill" data-aos="fade-up">
         <h2 className="sec-title">Experiences</h2>
 
         <div className="skill-sec">
             <div className="skill-tab">
-                <button type="button" className="tab-btn highlight" data-id="tabEdu">
+                <button 
+                type="button" 
+                className={`tab-btn ${activeTab === 'tabEdu' ? 'highlight' : ''}`}
+                onClick={() => handleTabClick('tabEdu')}
+                >
                     <span>Education</span>
                 </button>
-                <button type="button" className="tab-btn" data-id="tabDev">
+                <button 
+                type="button" 
+                className={`tab-btn ${activeTab === 'tabDev' ? 'highlight' : ''}`}
+                onClick={() => handleTabClick('tabDev')}
+                >
                     <span>Development</span>
                 </button>
-                <button type="button" className="tab-btn" data-id="tabExp">
+                <button 
+                type="button" 
+                className={`tab-btn ${activeTab === 'tabExp' ? 'highlight' : ''}`}
+                onClick={() => handleTabClick('tabExp')}
+                >
                     <span>Experiences</span>
                 </button>
-                <button type="button" className="tab-btn" data-id="tabSkl">
+                <button 
+                type="button" 
+                className={`tab-btn ${activeTab === 'tabSkl' ? 'highlight' : ''}`}
+                onClick={() => handleTabClick('tabSkl')}
+                >
                     <span>Skills</span>
                 </button>
-                <button type="button" className="tab-btn" data-id="tabTol">
+                <button 
+                type="button" 
+                className={`tab-btn ${activeTab === 'tabTol' ? 'highlight' : ''}`}
+                onClick={() => handleTabClick('tabTol')}
+                >
                     <span>Tools</span>
                 </button>
             </div>
 
-            <div className="tabSkill description tabSkill-active" data-id="tabEdu">
+            <div className={`tabSkill description ${activeTab === 'tabEdu' ? 'tabSkill-active' : ''}`}>
                 <h3>Education</h3>
                 <ul>
                     <li className="animate__animated animate__flipInX" style={{animationDelay: '.1s'}}>
@@ -41,7 +70,7 @@ function Experiences() {
                 </ul>
             </div>
 
-            <div className="tabSkill description" data-id="tabDev">
+            <div className={`tabSkill description ${activeTab === 'tabDev' ? 'tabSkill-active' : ''}`}>
                 <h3 className="skill_title">Development</h3>
                 <ul>
                     <li className="animate__animated animate__flipInX" style={{animationDelay: '.3s'}}>
@@ -76,7 +105,7 @@ function Experiences() {
                 </ul>
             </div>
 
-            <div className="tabSkill description" data-id="tabExp">
+            <div className={`tabSkill description ${activeTab === 'tabExp' ? 'tabSkill-active' : ''}`} >
                 <h3 className="skill_title">Experiences</h3>
                 <ul>
                     <li className="animate__animated animate__flipInX" style={{animationDelay: '.1s'}}>
@@ -107,7 +136,7 @@ function Experiences() {
                 </ul>
             </div>
 
-            <div className="tabSkill description" data-id="tabSkl">
+            <div className={`tabSkill description ${activeTab === 'tabSkl' ? 'tabSkill-active' : ''}`} >
                 <h3 className="skill_title">Skills</h3>
                 <ul className="skill_list">
                     <li className="animate__animated animate__flipInX" style={{animationDelay: '.3s'}}>
@@ -195,7 +224,7 @@ function Experiences() {
                 </ul>
             </div>
 
-            <div className="tabSkill description" data-id="tabTol">
+            <div className={`tabSkill description ${activeTab === 'tabTol' ? 'tabSkill-active' : ''}`} >
                 <h3 className="skill_title">Tools</h3>
                 <ul className="skill_list">
                     <li className="animate__animated animate__flipInX" style={{animationDelay: '.2s'}}>
@@ -238,6 +267,8 @@ function Experiences() {
         </div>
     </section>
     )
+
 }
+
 
 export default Experiences;
