@@ -5,6 +5,9 @@ function Projects() {
     const [activeTab, setActiveTab] = useState('loadProj');
     const [visibleCards, setVisibleCards] = useState(6);
     const [screenWidth, setScreenWidth] = useState(window.innerWidth);
+    const [visibleDesign, setVisibleDesign] = useState(8);
+    const [designScreenWidth, setDesignScreenWidth] = useState(window.innerWidth);
+
 
     useEffect(() => {
 
@@ -35,8 +38,6 @@ function Projects() {
             setVisibleCards(prev => prev + 2);
         }
     };
-
-
 
     const handleClickTab = (actName) => {
         setActiveTab(actName);
@@ -202,8 +203,6 @@ function Projects() {
         setModalOpen(true);
         setSelectedImage(image);
         setSelectedName(name);
-        console.log(name, image);
-
     }
 
     const closeModal = () => {
@@ -289,18 +288,48 @@ function Projects() {
             "title": "Simple Blog System",
             "image": "Simple Blog System.png"
         }
-    ]
+    ];
+
+
+    useEffect(() => {
+    
+        window.addEventListener('resize', () => setDesignScreenWidth(window.innerWidth));
+        return () => {
+            window.removeEventListener('resize', () => setDesignScreenWidth(window.innerWidth));
+        }
+    }, []);
+
+
+    useEffect(() => {
+    
+        if(designScreenWidth > 1024) {
+            setVisibleDesign(8);
+        }else if(designScreenWidth > 768) {
+            setVisibleDesign(6);
+        }else {
+            setVisibleDesign(6);
+        }
+
+    }, [designScreenWidth]);
+
+
+    const handleDesignShowMore = () => {
+        if (designScreenWidth > 1024) {
+            setVisibleDesign(prev => prev + 4);
+        } else {
+            setVisibleDesign(prev => prev + 3);
+        }
+    };
 
     const renderDesigns = () => {
 
-        // let output = [];
         let animateDesign = ["animate__slideInRight", "animate__slideInDown", "animate__slideInLeft", "animate__slideInUp"];
         let aniCountDesign = 0;
         let directionDesign = 1;
 
-        return designData.slice(0, visibleCards).map((item, i) => {
+        return designData.slice(0, visibleDesign).map((value, v) => {
 
-            if(i === 4) {
+            if(v === 4) {
                 directionDesign = -1;
             }
 
@@ -319,12 +348,12 @@ function Projects() {
             }
 
             return(
-                <div className={`card animate__animated ${animateDesign[aniCountDesign]}`} key={item.id}>
+                <div className={`card animate__animated ${animateDesign[aniCountDesign]}`} key={value.id}>
                     <div className="card-image">
-                        <img src={require(`../assets/imgs/designs/${item.image}`)} alt="designs"/>
+                        <img src={require(`../assets/imgs/designs/${value.image}`)} alt="designs"/>
                     </div>
                                         
-                    <button type="button" onClick={() => openModal(item.title, item.image)} className="view-btn">
+                    <button type="button" onClick={() => openModal(value.title, value.image)} className="view-btn">
                         <i className="fa fa-eye"></i>
                     </button>
                 </div>
@@ -337,7 +366,7 @@ function Projects() {
 
     return(
         <>
-            <section id="projects" className="my-projects" data-aos="fade-up">
+            <section id="projects" className="my-projects">
                 <h2 className="sec-title">Projects</h2>
 
                 <div className="project-tab">
@@ -345,7 +374,7 @@ function Projects() {
                     type="button" 
                     className={`proj-btn ${activeTab === 'loadProj' ? 'proj-active' : ''}`}
                     onClick={() => {
-                        handleClickTab('loadProj')
+                        handleClickTab('loadProj');
                         }}
                     >Projects</button>
                     <button 
@@ -367,34 +396,32 @@ function Projects() {
 
                     <div className={`tab ${activeTab === 'loadProj' ? 'tab-active' : ''}`}>
 
-                        <div className="projects-sec">{renderProjects()}</div>
+                        <div className="projects-sec">{activeTab === 'loadProj' ? renderProjects() : ''}</div>
                         <button type="button" onClick={handleShowMore} className="load-btn">Show More</button>
 
                     </div>
 
                     <div  className={`tab ${activeTab === 'loadDes' ? 'tab-active' : ''}`}>
 
-                        <div className="design">{renderDesigns()}</div>
-                        <button type="button" onClick={handleShowMore} className="load-btn">Show More</button>				
+                        <div className="design">{activeTab === 'loadDes' ? renderDesigns() : ''}</div>
+                        <button type="button" onClick={handleDesignShowMore} className="load-btn">Show More</button>				
 
                     </div>
 
                     <div  className={`tab ${activeTab === 'loadBlog' ? 'tab-active' : ''}`}>
-
                         <div className="blg"></div>
                         <button type="button" className="load-btn">Show More</button>				
-
                     </div>
-
             </section>
 
 
-            <div className="model">
+            {/* Model */}
+            <div className="model" style={modalOpen ? { zIndex: '99999999', opacity: 1 } : {}}>
                 <div className="model-title">
-                    <p id="title">{selectedName}</p>
+                    <p id="title">{modalOpen ? selectedName : ''}</p>
                 </div>
                 <div className="model-inner">
-                    <img src={`../assets/imgs/designs/${selectedImage}"`} id="design-image" alt={selectedName}/>
+                    <img src={modalOpen ? require(`../assets/imgs/designs/${selectedImage}`) : ''} alt={modalOpen ? selectedName : ''} />
                 </div>
                 <div className="close-btn" onClick={closeModal}>&times;</div>
             </div>

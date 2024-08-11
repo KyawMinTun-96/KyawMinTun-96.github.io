@@ -2,7 +2,7 @@
 
 function Contact() {
     return(
-        <section id="contact" className="my-contact" data-aos="fade-up">
+        <section id="contact" className="my-contact">
             <h2 className="sec-title">Contact</h2>
 
         <div className="contact-sec">
