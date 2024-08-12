@@ -1,16 +1,36 @@
 {
   "files": {
-    "main.css": "/static/css/main.fd06d284.css",
-    "main.js": "/static/js/main.ba01b1c3.js",
-    "static/media/kmt_img.png": "/static/media/kmt_img.874c9aebfa888212a541.png",
-    "static/media/Roboto-Regular.ttf": "/static/media/Roboto-Regular.03523cf578d69fa92322.ttf",
-    "static/media/harlowsoliditalic.ttf": "/static/media/harlowsoliditalic.60f385330cb629314bcc.ttf",
-    "index.html": "/index.html",
-    "main.fd06d284.css.map": "/static/css/main.fd06d284.css.map",
-    "main.ba01b1c3.js.map": "/static/js/main.ba01b1c3.js.map"
+    "main.css": "/kyawmintun-96.github.io/static/css/main.f2362356.css",
+    "main.js": "/kyawmintun-96.github.io/static/js/main.2edb0db9.js",
+    "static/js/453.bb257cf5.chunk.js": "/kyawmintun-96.github.io/static/js/453.bb257cf5.chunk.js",
+    "static/media/travel_and_tour_dest.png": "/kyawmintun-96.github.io/static/media/travel_and_tour_dest.528edb3ca5dd942588eb.png",
+    "static/media/zfreeti_hotel.png": "/kyawmintun-96.github.io/static/media/zfreeti_hotel.95141a7632e1fa156ada.png",
+    "static/media/travel_and_tour1.png": "/kyawmintun-96.github.io/static/media/travel_and_tour1.23b9f18a1e9ffc6ffe9f.png",
+    "static/media/voyager.jpg": "/kyawmintun-96.github.io/static/media/voyager.7326d97a085c42d31c61.jpg",
+    "static/media/old_portfolio.png": "/kyawmintun-96.github.io/static/media/old_portfolio.71816384986327dbad02.png",
+    "static/media/travel.jpg": "/kyawmintun-96.github.io/static/media/travel.316ad1f83bb7da6a1ee0.jpg",
+    "static/media/one_mart.png": "/kyawmintun-96.github.io/static/media/one_mart.7c35540eacc7c50fb474.png",
+    "static/media/Simple Blog System.png": "/kyawmintun-96.github.io/static/media/Simple Blog System.65cd7d6b5c7c48ce08cb.png",
+    "static/media/Food Order System.png": "/kyawmintun-96.github.io/static/media/Food Order System.df9b8245b487e60faa80.png",
+    "static/media/jewellery.jpg": "/kyawmintun-96.github.io/static/media/jewellery.d775f14422e1a8a84b06.jpg",
+    "static/media/new_portfolio.png": "/kyawmintun-96.github.io/static/media/new_portfolio.27992fcc6e6299e27af3.png",
+    "static/media/ems.png": "/kyawmintun-96.github.io/static/media/ems.e5164241e987089d2a6b.png",
+    "static/media/bus_ticket_system.png": "/kyawmintun-96.github.io/static/media/bus_ticket_system.12efeb4ddfbf90f73057.png",
+    "static/media/SR.png": "/kyawmintun-96.github.io/static/media/SR.5ce0dc64dc2924c7c465.png",
+    "static/media/idms.png": "/kyawmintun-96.github.io/static/media/idms.b15b532ebb6390d1020e.png",
+    "static/media/simple_inventory.png": "/kyawmintun-96.github.io/static/media/simple_inventory.cb5b3b0edb71ed3a7b4d.png",
+    "static/media/kmt_img2.png": "/kyawmintun-96.github.io/static/media/kmt_img2.d0406729fe1af34ab1d0.png",
+    "static/media/email_verification.png": "/kyawmintun-96.github.io/static/media/email_verification.2b055fb2df088412c046.png",
+    "static/media/Roboto-Regular.ttf": "/kyawmintun-96.github.io/static/media/Roboto-Regular.03523cf578d69fa92322.ttf",
+    "static/media/KyawMinTun_CV.pdf": "/kyawmintun-96.github.io/static/media/KyawMinTun_CV.86576f76003c19c353ad.pdf",
+    "static/media/harlowsoliditalic.ttf": "/kyawmintun-96.github.io/static/media/harlowsoliditalic.60f385330cb629314bcc.ttf",
+    "index.html": "/kyawmintun-96.github.io/index.html",
+    "main.f2362356.css.map": "/kyawmintun-96.github.io/static/css/main.f2362356.css.map",
+    "main.2edb0db9.js.map": "/kyawmintun-96.github.io/static/js/main.2edb0db9.js.map",
+    "453.bb257cf5.chunk.js.map": "/kyawmintun-96.github.io/static/js/453.bb257cf5.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.fd06d284.css",
-    "static/js/main.ba01b1c3.js"
+    "static/css/main.f2362356.css",
+    "static/js/main.2edb0db9.js"
   ]
 }
