@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/kyawmintun-96.github.io/static/css/main.f2362356.css",
-    "main.js": "/kyawmintun-96.github.io/static/js/main.597e6f29.js",
+    "main.js": "/kyawmintun-96.github.io/static/js/main.5e116862.js",
     "static/js/453.bb257cf5.chunk.js": "/kyawmintun-96.github.io/static/js/453.bb257cf5.chunk.js",
     "static/media/travel_and_tour_dest.png": "/kyawmintun-96.github.io/static/media/travel_and_tour_dest.528edb3ca5dd942588eb.png",
     "static/media/zfreeti_hotel.png": "/kyawmintun-96.github.io/static/media/zfreeti_hotel.95141a7632e1fa156ada.png",
@@ -26,11 +26,11 @@
     "static/media/harlowsoliditalic.ttf": "/kyawmintun-96.github.io/static/media/harlowsoliditalic.60f385330cb629314bcc.ttf",
     "index.html": "/kyawmintun-96.github.io/index.html",
     "main.f2362356.css.map": "/kyawmintun-96.github.io/static/css/main.f2362356.css.map",
-    "main.597e6f29.js.map": "/kyawmintun-96.github.io/static/js/main.597e6f29.js.map",
+    "main.5e116862.js.map": "/kyawmintun-96.github.io/static/js/main.5e116862.js.map",
     "453.bb257cf5.chunk.js.map": "/kyawmintun-96.github.io/static/js/453.bb257cf5.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.f2362356.css",
-    "static/js/main.597e6f29.js"
+    "static/js/main.5e116862.js"
   ]
 }
