@@ -1,6 +1,49 @@
-
+import { useState } from 'react';
+import emailjs from 'emailjs-com';
+import Swal from 'sweetalert2';
 
 function Contact() {
+    const [formData, setFormData] = useState({
+        name: '', 
+        email:'', 
+        subject: '', 
+        message:''
+    });
+
+    const handleChange = (e) => {
+        setFormData({...formData, [e.target.name]: e.target.value });
+    }
+
+    const handleSubmit = (e) => {
+
+        e.preventDefault();
+
+        emailjs.send(
+            "service_ayif3fj",
+            "template_2r0jywr",
+            formData,
+            'gGhpRCOC2fzTEJgO0'
+    
+        ).then((result) => {
+            
+            Swal.fire({
+                position: 'center',
+                icon: 'success',
+                title: 'Thanks for Contacting me..! I Will Contact You Soon...',
+                confirmButtonColor: '#3085d6'
+            });
+    
+          }, (error) => {
+    
+            alert('Failed to send message');
+    
+        });
+        
+    }
+
+
+
+
     return(
         <section id="contact" className="my-contact">
             <h2 className="sec-title">Contact</h2>
@@ -17,17 +60,17 @@ function Contact() {
             </div>
 
 
-            <form name="form-data" method="post" className="form" id="reset">
+            <form onSubmit={handleSubmit} className="form" id="reset">
                 <p>
-                    <input type="text" name="Username" placeholder="full name" required/>
-                    <input type="email" name="Email" placeholder="email address" required/>
+                    <input type="text" name="name" placeholder="full name" onChange={handleChange} required/>
+                    <input type="email" name="email" placeholder="email address" onChange={handleChange} required/>
                 </p>
-                <input type="text" name="Subject" placeholder="subject" required/>
+                <input type="text" name="subject" placeholder="subject" onChange={handleChange} required/>
 
-                <textarea id="" cols="30" name="Message" rows="10" placeholder="Message" required></textarea>
+                <textarea name="message" id="" cols="30" rows="10" placeholder="Message" onChange={handleChange} required></textarea>
 
                 <div className="form-btn">
-                    <input type="submit" name="submit" value="Send"/>
+                    <input type="submit" value="Send"/>
                 </div>
             </form>
         </div>
