@@ -6,6 +6,7 @@ import Projects from "./components/Projects";
 import Experiences from "./components/Experiences";
 import Blog from "./components/Blog";
 import Contact from './components/Contact';
+import Error from './components/Error';
 import Footer from './components/Footer';
 
 function App() {
@@ -25,6 +26,7 @@ function App() {
               <Route path='/Projects' element={<Projects/>}/>
               <Route path='/Blog' element={<Blog/>}/>
               <Route path='/contact' element={<Contact/>}/>
+              <Route path='*' element={<Error/>}/>
             </Routes>
           </div>
         </main>
