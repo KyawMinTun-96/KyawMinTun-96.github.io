@@ -1,4 +1,5 @@
 import { useState, useEffect } from "react";
+import Blog from '../components/Blog';
 
 function Projects() {
 
@@ -7,6 +8,7 @@ function Projects() {
     const [screenWidth, setScreenWidth] = useState(window.innerWidth);
     const [visibleDesign, setVisibleDesign] = useState(8);
     const [designScreenWidth, setDesignScreenWidth] = useState(window.innerWidth);
+    const [loading, setLoading] = useState(false); // Add loading state
 
 
     useEffect(() => {
@@ -40,7 +42,13 @@ function Projects() {
     };
 
     const handleClickTab = (actName) => {
+        setLoading(true); // Set loading to true when a tab is clicked
         setActiveTab(actName);
+
+        // Simulate a loading delay
+        setTimeout(() => {
+            setLoading(false); // Set loading to false when content is ready
+        }, 1000); // Adjust delay time as needed
     }
 
     const projData = [
@@ -363,6 +371,44 @@ function Projects() {
         
     }
 
+    const renderPlaceholderCards = () => {
+        return Array(activeTab === 'loadDes' ? 8 : 6).fill(0).map((_, index) => (
+            <div className="card placeholder" key={index}>
+                <div className="card-body">
+                    <div className="card-header"></div>
+                    <p className="title placeholder-title"></p>
+                    <div className="description">
+                        <p className="placeholder-content"></p>
+                    </div>
+                </div>
+                <div className="card-footer">
+                    <ul>
+                        <li className="placeholder-languages"></li>
+                    </ul>
+                </div>
+            </div>
+        ));
+    }
+
+
+    const renderContent = () => {
+        if (loading) {
+
+            return renderPlaceholderCards(); // Show placeholder cards while loading
+
+        } else {
+            if (activeTab === 'loadProj') {
+
+                return renderProjects();
+
+            } else if (activeTab === 'loadDes') {
+
+                return renderDesigns();
+
+            }
+        }
+    }
+
 
     return(
         <>
@@ -396,21 +442,31 @@ function Projects() {
 
                     <div className={`tab ${activeTab === 'loadProj' ? 'tab-active' : ''}`}>
 
-                        <div className="projects-sec">{activeTab === 'loadProj' ? renderProjects() : ''}</div>
+                        <div className="projects-sec">
+                            {renderContent()}
+                        </div>
                         <button type="button" onClick={handleShowMore} className="load-btn">Show More</button>
 
                     </div>
 
                     <div  className={`tab ${activeTab === 'loadDes' ? 'tab-active' : ''}`}>
 
-                        <div className="design">{activeTab === 'loadDes' ? renderDesigns() : ''}</div>
+                        <div className="design">
+                            {renderContent()}
+                        </div>
                         <button type="button" onClick={handleDesignShowMore} className="load-btn">Show More</button>				
 
                     </div>
 
                     <div  className={`tab ${activeTab === 'loadBlog' ? 'tab-active' : ''}`}>
-                        <div className="blg"></div>
-                        <button type="button" className="load-btn">Show More</button>				
+
+                        {activeTab === 'loadBlog'?
+
+                        <Blog padding='0px'/>
+                        
+                        :
+
+                        ''}
                     </div>
             </section>
 

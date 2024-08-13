@@ -156,63 +156,6 @@ deviceChange(mediaQuery);
 
 
 
-
-
-
-/*=================Form Request====================*/
-// const scriptURL = 'https://prod-41.southeastasia.logic.azure.com:443/workflows/bd2ac059878a44b5a9b5716687759cab/triggers/manual/paths/invoke?api-version=2016-06-01&sp=%2Ftriggers%2Fmanual%2Frun&sv=1.0&sig=6k-iZ5Kn8PNR04P5S-1OphbtUtl6vtiJ0CqsgQjfIgM';
-
-// const form = document.forms['form-data'];
-// form.addEventListener('submit', e => {
-
-//     e.preventDefault()
-
-//     // Get form data
-//     const formData = new FormData(document.getElementById('reset'));
-
-//     // Convert FormData to JSON
-//     const jsonData = {};
-
-//     formData.forEach((value, key) => {
-
-//         jsonData[key] = value;
-
-//     });
-
-//     fetch(
-//             scriptURL, {
-//                 method: 'POST',
-//                 headers: {
-//                     'Content-Type': 'application/json',
-//                   },
-//                 body: JSON.stringify(jsonData),
-//             }
-//         )
-//         .then(
-
-//             response => {
-
-//                 Swal.fire({
-//                     position: 'center',
-//                     icon: 'success',
-//                     title: 'Thanks for Contacting me..! I Will Contact You Soon...',
-//                     confirmButtonColor: '#3085d6'
-//                 })
-
-//                 form.reset()
-
-//             }
-
-//         )
-//         .catch(
-//             error => console.error('Error!', error.message)
-//         )
-
-// });
-
-
-
-
 /*===============preloader===================*/
 // window.addEventListener('load', function () {
 
