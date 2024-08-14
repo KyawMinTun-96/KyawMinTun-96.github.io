@@ -3,6 +3,7 @@ import About from "./About";
 import Contact from './Contact';
 import Experiences from "./Experiences";
 import Projects from './Projects';
+import VisitorCount from './VisitorCount';
 
 function Home() {
     return(
@@ -11,6 +12,7 @@ function Home() {
             <About/>
             <Experiences/>
             <Projects/>
+            <VisitorCount/>
             <Contact/>
         </>
     )
