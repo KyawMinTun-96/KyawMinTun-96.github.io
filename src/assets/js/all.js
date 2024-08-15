@@ -192,74 +192,10 @@ deviceChange(mediaQuery);
 
 //     }
 
-//     // Get visitor information
-//     const visitorInfo = {
-//         userAgent: navigator.userAgent,
-//         language: navigator.language,
-//         platform: navigator.platform,
-//         cookiesEnabled: navigator.cookieEnabled,
-//         online: navigator.onLine,
-//         javaEnabled: navigator.javaEnabled(),
-//         doNotTrack: navigator.doNotTrack,
-//         hardwareConcurrency: navigator.hardwareConcurrency,
-//         maxTouchPoints: navigator.maxTouchPoints,
-//         plugins: getPluginInfo(),
-//         screen: {
-//           width: window.screen.width,
-//           height: window.screen.height,
-//           pixelDepth: window.screen.pixelDepth,
-//         },
-//         viewport: {
-//           width: window.innerWidth,
-//           height: window.innerHeight,
-//         },
-//         location: {
-//           href: window.location.href,
-//           protocol: window.location.protocol,
-//           host: window.location.host,
-//           pathname: window.location.pathname,
-//           search: window.location.search,
-//         },
-//         timestamp: new Date().toISOString(),
-//     };
-
-//     // Function to get plugin information
-//     function getPluginInfo() {
-
-//         const plugins = [];
-//         for (let i = 0; i < navigator.plugins.length; i++) {
-
-//             plugins.push({
-//             name: navigator.plugins[i].name,
-//             description: navigator.plugins[i].description,
-//             });
-
-//         }
-
-//         return plugins;
-//     }
-
-//     sendVisitorInfo(visitorInfo);
-
 // });
 
 
 
 
-
-// Get the user's current location
-// navigator.geolocation.getCurrentPosition(
-//     function(position) {
-//         const location = {
-//         latitude: position.coords.latitude,
-//         longitude: position.coords.longitude
-//         };
-//     },
-//     function(error) {
-
-//         console.error('Error getting location:', error.message);
-
-//     }
-// );
 
 

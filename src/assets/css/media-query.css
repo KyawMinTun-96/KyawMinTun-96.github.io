@@ -432,6 +432,16 @@
     }
 
 
+    /* Visirot CSS */
+    .visitor-counter-container {
+        max-width: 250px;
+        padding: 20px;
+    }
+
+    .visitor-count {
+        font-size: 35px;
+    }
+
 
     /* Contact CSS */
     .my-contact {

@@ -8,8 +8,7 @@ function Info() {
         <p className="">I build things for the web.</p>
         <p className="">I’m specializing in building (and occasionally designing) exceptional digital experiences. Currently, I’m focused on building accessible, human-centered products.</p>
         <div className="cv-btn">
-            {/* <a href="#">Resume</a> */}
-            <a href="assets/resume/KyawMinTun_CV.pdf" target="_blank" rel="noreferrer">Resume</a>
+            <a href={require("../assets/resume/KyawMinTun_CV.pdf")} target="_blank" rel="noreferrer">Resume</a>
         </div>
     </section>
     )
