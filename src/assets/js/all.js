@@ -158,41 +158,7 @@ deviceChange(mediaQuery);
 
 
 
-// Get information Get Website Visitor info
-// document.addEventListener('DOMContentLoaded', function() {
-//     // Function to send data to your server
-//     function sendVisitorInfo(data) {
-//         // Replace the following URL with the endpoint on your server to handle the data
-//         // const endpoint = 'https://prod-50.southeastasia.logic.azure.com:443/workflows/efc3a04d12a34a52b9b8c8720c5756db/triggers/manual/paths/invoke?api-version=2016-06-01&sp=%2Ftriggers%2Fmanual%2Frun&sv=1.0&sig=-Y6B4QDJoLFJ3zto74rofhqk2emUnaBpnZl-cryJeVE';
 
-//         const endpoint = 'https://prod2-59.southeastasia.logic.azure.com:443/workflows/42ef4487b5ae41a29170530ddb701d60/triggers/manual/paths/invoke?api-version=2016-06-01&sp=%2Ftriggers%2Fmanual%2Frun&sv=1.0&sig=IQyAHtZqWqNMXhjLTsiOps8HHwhzOv3iwWhgOAoaGV0';
-        
-//         // Use fetch API to send data to the server
-//         fetch(endpoint, {
-//             method: 'POST',
-//             headers: {
-//             'Content-Type': 'application/json',
-//             },
-//             body: JSON.stringify(data),
-//         })
-//         // .then(response => {
-//         //     if (!response.ok) {
-
-//         //         throw new Error('Network response was not ok');
-
-//         //     }
-
-//         //     return response.json();
-//         // })
-//         // .then(data => {
-
-//         //     console.log('Data sent successfully:', data);
-
-//         // })
-
-//     }
-
-// });
 
 
 
