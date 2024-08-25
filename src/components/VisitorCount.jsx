@@ -30,13 +30,14 @@ function VisitorCount() {
                     if(isMounted) {
                         setVisitorCount(updatedCount);
                     }
-
+                    
+                    // https://api.ipstack.com/172.68.4.225?access_key=1dbcbfc222bb09d0c7381352ef24d547&format=1
                     const fetchLocation = async () => {
                         try {
                             const response = await fetch (
-                                `https://api.ipstack.com/172.68.4.225?access_key=1dbcbfc222bb09d0c7381352ef24d547&format=1`);
+                                `http://ip-api.com/json/`);
                             const data = await response.json();
-       
+
                             const browserInfo = {
                                 userAgent: navigator.userAgent,
                                 platform: navigator.platform,

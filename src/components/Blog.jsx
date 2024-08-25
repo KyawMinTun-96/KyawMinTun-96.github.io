@@ -13,7 +13,7 @@ function Blog({padding= '100px 0px'}) {
     useEffect(() => {
       const fetchArticles = async () => {
         try {
-            const response = await axios.get(`https://dev.to/api/articles?username=kyawmintun96&page=1&per_page=100000000`);
+            const response = await axios.get(`https://dev.to/api/articles?username=kyawmintun96&page=1&per_page=100`);
             setArticles(response.data);
         } catch (error) {
           console.error('Error fetching the articles', error);
