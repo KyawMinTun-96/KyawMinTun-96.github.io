@@ -1,5 +1,14 @@
+import { useState, useEffect } from 'react';
+import {loadSkills, PArray} from './LoadSkills'
 
 function About() {
+
+    const [pName, setPName] = useState([]);
+
+    useEffect(() => {
+        setPName(PArray);
+    }, []);
+
     return(
         <section id="about" className="my-info">
             <h2 className="sec-title">About Me</h2>
@@ -13,29 +22,9 @@ function About() {
                     <p>I recently completed an e-commerce project using HTML5, CSS3, JavaScript, JQuery, PHP and MySQL.</p>
 
                     <ul className="skills">
-                        <li>PHP</li>
-                        <li>Python</li>
-                        <li>C#</li>
-                        <li>HTML5</li>
-                        <li>Laravel</li>
-                        <li>CSS3</li>
-                        <li>MySQL</li>
-                        <li>MSSQLSERVER</li>
-                        <li>JavaScript</li>
-                        <li>Bootstrap</li>
-                        <li>JQuery</li>
-                        <li>Git</li>
-                        <li>GitHub</li>
-                        <li>GitLab</li>
-                        <li>Django</li>
-                        <li>Photoshop</li>
-                        <li>AWS</li>
-                        <li>Power Apps</li>
-                        <li>Power Automate</li>
-                        <li>SharePoint</li>
-                        <li>PowerShell Scripting</li>
-                        <li>Azure DevOps CI/CD for Power Platform</li>
-                        <li>Microsoft 365</li>
+                    {
+                        loadSkills(pName)
+                    }
                     </ul>
                 </div>
                 <div className="profile">

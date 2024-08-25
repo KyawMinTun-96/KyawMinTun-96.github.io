@@ -1,9 +1,15 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
+import {loadSkills, PArray} from './LoadSkills'
 
 function Experiences() {
 
 
     const [activeTab, setActiveTab] = useState('tabEdu');
+    const [pName, setPName] = useState([]);
+
+    useEffect(() => {
+        setPName(PArray);
+    }, []);
 
     const handleTabClick = (tabName) => {
         setActiveTab(tabName);
@@ -139,7 +145,11 @@ function Experiences() {
             <div className={`tabSkill description ${activeTab === 'tabSkl' ? 'tabSkill-active' : ''}`} >
                 <h3 className="skill_title">Skills</h3>
                 <ul className="skill_list">
-                    <li className="" style={{animationDelay: '.3s'}}>
+
+                    {
+                        loadSkills(pName)
+                    }
+                    {/* <li className="" style={{animationDelay: '.3s'}}>
                         HTML5
                     </li>
                     <li className="" style={{animationDelay: '.4s'}}>
@@ -219,7 +229,7 @@ function Experiences() {
 
                     <li className="" style={{animationDelay: '1.2s'}}>
                         PowerShell Script
-                    </li>
+                    </li> */}
 
                 </ul>
             </div>
