@@ -20,7 +20,9 @@ export const PArray = [
         'M365': 'm365.png',
         'Sharepoint': 'sharepoint.png',
         'AWS': 'aws.png',
-        'Azure DevOps': 'azure.png'
+        'Azure DevOps': 'azure.png',
+        'C#': 'c#.png',
+        'Python': 'python.png'
 
     }
 ];
@@ -38,5 +40,9 @@ export const loadSkills = (pName) => {
 }
 
 export const loadSkillsPrj = (data) => {
-   return Object.keys(data).map(skill => console.log(skill)) 
+    return Object.entries(PArray[0]).map(([key, icon]) => (
+        data.toLowerCase() === key.toLowerCase() ? (
+            <img src={require(`../assets/imgs/programming/${icon}`)} width={20} height={20} alt={key} key={key} />
+        ) : null
+    ));
 }

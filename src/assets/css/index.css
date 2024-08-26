@@ -500,6 +500,7 @@
 .description span {
 	margin-bottom: 0;
 	margin-left: 5px;
+	color: #a8b2d1;
 }
 
 
@@ -671,6 +672,9 @@
 	font-size: clamp(13px, 4vw, 13px);
 	font-weight: lighter;
 	line-height: 1.7;
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }
 
 .my-projects .load-btn,

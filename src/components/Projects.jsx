@@ -1,5 +1,6 @@
 import { useState, useEffect } from "react";
 import Blog from '../components/Blog';
+import {loadSkillsPrj} from './LoadSkills'
 
 function Projects() {
 
@@ -110,7 +111,7 @@ function Projects() {
             "id" : 7,
             "title" : "Laravel Project",
             "content" : "Lorem ipsum dolor sit amet consectetur. Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem, eveniet.",
-            "languages": ["HTML5", "CSS3", "JavaScript", "JQuery", "PHP", "MySQL", "Laravel framework"],
+            "languages": ["HTML5", "CSS3", "JavaScript", "JQuery", "PHP", "MySQL", "Laravel"],
             "github": "https://github.com/KyawMinTun-96",
             "demo": "https://github.com/KyawMinTun-96/Laravel"
         },
@@ -126,7 +127,7 @@ function Projects() {
             "id" : 9,
             "title" : "Simple Inventory System Project",
             "content" : "Lorem ipsum dolor sit amet consectetur. Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem, eveniet.",
-            "languages": ["C#", "MSSQL SERVER"],
+            "languages": ["C#", "MSSQLSERVER"],
             "github": "https://github.com/KyawMinTun-96",
             "demo": "https://github.com/KyawMinTun-96/SimpleInventorySystem"
         },
@@ -134,7 +135,7 @@ function Projects() {
             "id" : 10,
             "title" : "Employee Management System Project",
             "content" : "Lorem ipsum dolor sit amet consectetur. Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem, eveniet.",
-            "languages": ["HTML5", "CSS3", "JavaScript", "JQuery", "Python", "Django"],
+            "languages": ["HTML5", "CSS3", "JavaScript", "JQuery", "Python"],
             "github": "https://github.com/KyawMinTun-96",
             "demo": "https://github.com/KyawMinTun-96/EmployeeManagementSystem"
         },
@@ -142,7 +143,7 @@ function Projects() {
             "id" : 11,
             "title" : "Simple Student Registration",
             "content" : "Lorem ipsum dolor sit amet consectetur. Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem, eveniet.",
-            "languages": ["Python", "Tkinter"],
+            "languages": ["Python"],
             "github": "https://github.com/KyawMinTun-96",
             "demo": "https://github.com/KyawMinTun-96/Simple_Student_Registration_using_Tkinter-"
         }
@@ -191,7 +192,13 @@ function Projects() {
 
                         <div className="card-footer">
                             <ul>
-                                <li>{item.languages.join(', ')}</li>
+                            {
+                                item.languages.map((language, index) => (
+                                    <li key={index} className='img-hover-effect'>
+                                        {loadSkillsPrj(language)}
+                                    </li>
+                                ))
+                            }
                             </ul>
                         </div>
                 </div>

@@ -145,92 +145,9 @@ function Experiences() {
             <div className={`tabSkill description ${activeTab === 'tabSkl' ? 'tabSkill-active' : ''}`} >
                 <h3 className="skill_title">Skills</h3>
                 <ul className="skill_list">
-
                     {
                         loadSkills(pName)
                     }
-                    {/* <li className="" style={{animationDelay: '.3s'}}>
-                        HTML5
-                    </li>
-                    <li className="" style={{animationDelay: '.4s'}}>
-                        CSS3
-                    </li>
-                    <li className="" style={{animationDelay: '.5s'}}>
-                        JavaScript
-                    </li>
-                    <li className="" style={{animationDelay: '.6s'}}>
-                        JQuery
-                    </li>
-                    <li className="" style={{animationDelay: '.7s'}}>
-                        Photoshop
-                    </li>
-                    <li className="" style={{animationDelay: '.8s'}}>
-                        PHP
-                    </li>
-
-                    <li className="" style={{animationDelay: '1s'}}>
-                        MSSQLSERVER
-                    </li>
-
-                    <li className="" style={{animationDelay: '.8s'}}>
-                        C#
-                    </li>
-
-                    <li className="" style={{animationDelay: '1s'}}>
-                        MySQL
-                    </li>
-
-                    <li className="" style={{animationDelay: '.9s'}}>
-                        Laravel
-                    </li>
-
-                    <li className="" style={{animationDelay: '1.1s'}}>
-                        Bootstrap 
-                    </li>
-
-                    <li className="" style={{animationDelay: '1s'}}>
-                        Python
-                    </li>
-
-                    <li className="" style={{animationDelay: '1.2s'}}>
-                        Git 
-                    </li>
-                    <li className="" style={{animationDelay: '1.2s'}}>
-                        Django 
-                    </li>
-
-                    <li className="" style={{animationDelay: '1.2s'}}>
-                        Microsoft Office
-                    </li>
-
-                    <li className="" style={{animationDelay: '1s'}}>
-                        M365
-                    </li>
-
-                    <li className="" style={{animationDelay: '1s'}}>
-                        Power Apps
-                    </li>
-
-                    <li className="" style={{animationDelay: '.9s'}}>
-                        Power Automate
-                    </li>
-
-                    <li className="" style={{animationDelay: '1.1s'}}>
-                        SharePoint
-                    </li>
-
-                    <li className="" style={{animationDelay: '1s'}}>
-                        Azure DevOps(Power Platform)
-                    </li>
-
-                    <li className="" style={{animationDelay: '1.2s'}}>
-                        AWS
-                    </li>
-
-                    <li className="" style={{animationDelay: '1.2s'}}>
-                        PowerShell Script
-                    </li> */}
-
                 </ul>
             </div>
 
