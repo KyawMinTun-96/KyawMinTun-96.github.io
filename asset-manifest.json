@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.1d11c8ae.css",
-    "main.js": "/static/js/main.fb2642c9.js",
+    "main.css": "/static/css/main.c7491887.css",
+    "main.js": "/static/js/main.f36bd22f.js",
     "static/js/453.9415623e.chunk.js": "/static/js/453.9415623e.chunk.js",
     "static/media/travel_and_tour_dest.png": "/static/media/travel_and_tour_dest.528edb3ca5dd942588eb.png",
     "static/media/zfreeti_hotel.png": "/static/media/zfreeti_hotel.95141a7632e1fa156ada.png",
@@ -24,13 +24,14 @@
     "static/media/Roboto-Regular.ttf": "/static/media/Roboto-Regular.03523cf578d69fa92322.ttf",
     "static/media/KyawMinTun_CV.pdf": "/static/media/KyawMinTun_CV.7d1f20c2ace1614c405b.pdf",
     "static/media/harlowsoliditalic.ttf": "/static/media/harlowsoliditalic.60f385330cb629314bcc.ttf",
+    "static/media/laravel.png": "/static/media/laravel.68308e3c15a66e4e02c0.png",
     "index.html": "/index.html",
-    "main.1d11c8ae.css.map": "/static/css/main.1d11c8ae.css.map",
-    "main.fb2642c9.js.map": "/static/js/main.fb2642c9.js.map",
+    "main.c7491887.css.map": "/static/css/main.c7491887.css.map",
+    "main.f36bd22f.js.map": "/static/js/main.f36bd22f.js.map",
     "453.9415623e.chunk.js.map": "/static/js/453.9415623e.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.1d11c8ae.css",
-    "static/js/main.fb2642c9.js"
+    "static/css/main.c7491887.css",
+    "static/js/main.f36bd22f.js"
   ]
 }
