@@ -56,14 +56,41 @@ function Projects() {
         {
             "id" : 1,
             "title" : "One Mart Online Shop",
-            "content" : "Lorem ipsum dolor sit amet consectetur. Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem, eveniet.",
+            "content" : "This project focuses on developing a modern, responsive e-commerce website for OneMart. The site will feature a wide range of products and secure checkout options. With a clean and organized layout, users can easily browse categories, view detailed product information, and make purchases.",
             "languages": ["HTML5", "CSS3", "JavaScript", "JQuery", "Bootstrap", "PHP", "MySQL"],
-            "github": "https://github.com/KyawMinTun-96",
+            "github": "https://github.com/HtetYinMin/One-Mart",
             "demo": "https://github.com/HtetYinMin/One-Mart"
+        },
+
+        {
+            "id" : 2,
+            "title" : "Jewellery Website",
+            "content" : "This jewelry website focuses on creating a visually stunning and user-friendly interface. The design will feature a clean and elegant layout. The site will be fully responsive, ensuring a seamless browsing experience on all devices, from desktops to mobile phones.",
+            "languages": ["HTML5", "CSS3", "JavaScript", "JQuery"],
+            "github": "https://github.com/KyawMinTun-96/Jewellery",
+            "demo": "https://kyawmintun-96.github.io/Jewellery/"
         },
     
         {
-            "id" : 2,
+            "id" : 3,
+            "title" : "Travel and Tour Project",
+            "content" : "Lorem ipsum dolor sit amet consectetur. Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem, eveniet.",
+            "languages": ["HTML5", "CSS3", "JavaScript", "JQuery"],
+            "github": "https://github.com/KyawMinTun-96",
+            "demo": "https://github.com/KyawMinTun-96/Travel-and-Tour"
+        },
+    
+        {
+            "id" : 4,
+            "title" : "Hotel Website",
+            "content" : "This project involves creating a visually appealing and user-friendly website for a hotel. The front-end design will showcase the hotel's amenities, rooms, and services with high-quality images and an elegant layout.",
+            "languages": ["HTML5", "CSS3", "JavaScript", "JQuery"],
+            "github": "https://github.com/KyawMinTun-96/hotel.mm",
+            "demo": "https://kyawmintun-96.github.io/hotel.mm/"
+        },
+    
+        {
+            "id" : 5,
             "title" : "Internal Document Management System",
             "content" : "Lorem ipsum dolor sit amet consectetur. Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem, eveniet.",
             "languages": ["HTML5", "CSS3", "JavaScript", "JQuery", "PHP", "MySQL"],
@@ -72,39 +99,12 @@ function Projects() {
         },
     
         {
-            "id" : 3,
-            "title" : "Myanmar News Website",
+            "id" : 6,
+            "title" : "News Website",
             "content" : "Lorem ipsum dolor sit amet consectetur. Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem, eveniet.",
             "languages": ["HTML5", "CSS3", "JavaScript", "JQuery", "Bootstrap", "PHP", "MySQL"],
             "github": "https://github.com/KyawMinTun-96",
             "demo": "https://github.com/KyawMinTun-96/news.mm"
-        },
-    
-        {
-            "id" : 4,
-            "title" : "Jewellery Online Shop",
-            "content" : "Lorem ipsum dolor sit amet consectetur. Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem, eveniet.",
-            "languages": ["HTML5", "CSS3", "JavaScript", "JQuery", "PHP", "MySQL"],
-            "github": "https://github.com/KyawMinTun-96",
-            "demo": "https://github.com/KyawMinTun-96/Jewellery"
-        },
-    
-        {
-            "id" : 5,
-            "title" : "Travel and Tour Project",
-            "content" : "Lorem ipsum dolor sit amet consectetur. Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem, eveniet.",
-            "languages": ["HTML5", "CSS3", "JavaScript", "JQuery", "PHP", "MySQL"],
-            "github": "https://github.com/KyawMinTun-96",
-            "demo": "https://github.com/KyawMinTun-96/Travel-and-Tour"
-        },
-    
-        {
-            "id" : 6,
-            "title" : "Hotel Website Project",
-            "content" : "Lorem ipsum dolor sit amet consectetur. Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem, eveniet.",
-            "languages": ["HTML5", "CSS3", "JavaScript", "JQuery", "PHP", "MySQL"],
-            "github": "https://github.com/KyawMinTun-96",
-            "demo": "https://github.com/KyawMinTun-96/hotel.mm"
         },
     
         {
@@ -144,7 +144,7 @@ function Projects() {
             "title" : "Simple Student Registration",
             "content" : "Lorem ipsum dolor sit amet consectetur. Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem, eveniet.",
             "languages": ["Python"],
-            "github": "https://github.com/KyawMinTun-96",
+            "github": "https://github.com/KyawMinTun-96/Simple_Student_Registration_using_Tkinter-",
             "demo": "https://github.com/KyawMinTun-96/Simple_Student_Registration_using_Tkinter-"
         }
     ];
@@ -179,14 +179,14 @@ function Projects() {
             return(
                 <div className={`card animate__animated ${animatePrj[aniCountPrj]}`} key={item.id}>
                         <div className="card-body">
-                            <div className="card-header">
+                            <div className="card-header img-hover-effect">
                                 <a href={item.github} title="github" target="_blank" rel="noreferrer"><i className="fa fa-github" aria-hidden="true"></i></a>
-                                <a href={item.demo} title="projects" target="_blank" rel="noreferrer"><i className="fa fa-link" aria-hidden="true"></i></a>
+                                <a href={item.demo} title="demo" target="_blank" rel="noreferrer"><i className="fa fa-link" aria-hidden="true"></i></a>
                             </div>
                             <p className="title">{item.title}</p>
 
                             <div className="description">
-                                <p>{item.content}</p>
+                                <p>{item.content.substring(0, 140)}...</p>
                             </div>
                         </div>
 

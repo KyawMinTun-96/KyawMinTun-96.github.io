@@ -244,11 +244,13 @@
 	font-size: 8px;
 }
 
-.img-hover-effect img {
+.img-hover-effect img,
+.img-hover-effect a{
     transition: transform 0.3s ease, opacity 0.3s ease;
 }
 
-.img-hover-effect img:hover {
+.img-hover-effect img:hover,
+.img-hover-effect a:hover {
     transform: scale(1.5);
     opacity: 0.9;
     -webkit-transform: scale(1.5);

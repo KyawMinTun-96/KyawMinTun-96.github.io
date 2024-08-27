@@ -22,7 +22,8 @@ export const PArray = [
         'AWS': 'aws.png',
         'Azure DevOps': 'azure.png',
         'C#': 'c#.png',
-        'Python': 'python.png'
+        'Python': 'python.png',
+        'Laravel': 'laravel.png'
 
     }
 ];
