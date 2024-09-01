@@ -2,10 +2,12 @@ export const PArray = [
     {
         'HTML5': 'html.png',
         'CSS3': 'css.png',
-        'Bootstrap': 'bootstrap.png',
         'JavaScript': 'javascript.png',
+        'Type Script': 'typescript.png',
         'jQuery': 'jquery.png',
+        'Bootstrap': 'bootstrap.png',
         'React': 'react.png',
+        'Redux': 'redux.png',
         'React Native': 'react.png',
         'Vue': 'vue.png',
         'PHP': 'php.png',

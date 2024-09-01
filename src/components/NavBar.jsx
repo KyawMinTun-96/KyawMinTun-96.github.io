@@ -126,7 +126,7 @@ function NavBar() {
         
                   
                   <div className="resume">
-                    <a href={require("../assets/resume/KyawMinTun_CV.pdf")}>Resume</a>
+                    <a href={require("../assets/resume/KyawMinTun_CV.pdf")} target='_blank' rel='noreferrer'>Resume</a>
                   </div>
         
                   <div className="social">
