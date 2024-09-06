@@ -88,9 +88,18 @@ function Projects() {
             "github": "https://github.com/KyawMinTun-96/hotel.mm",
             "demo": "https://kyawmintun-96.github.io/hotel.mm/"
         },
-    
+
         {
             "id" : 5,
+            "title" : "Modern IT Company",
+            "content" : "This project involved designing and developing a state-of-the-art website for Modern IT Co.,Ltd.",
+            "languages": ["HTML5", "CSS3", "JavaScript", "JQuery", "React", "Bootstrap"],
+            "github": "https://github.com/KyawMinTun-96/modern-it",
+            "demo": "https://kyawmintun-96.github.io/modern-it"
+        },
+    
+        {
+            "id" : 6,
             "title" : "Internal Document Management System",
             "content" : "Lorem ipsum dolor sit amet consectetur. Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem, eveniet.",
             "languages": ["HTML5", "CSS3", "JavaScript", "JQuery", "PHP", "MySQL"],
@@ -99,7 +108,7 @@ function Projects() {
         },
     
         {
-            "id" : 6,
+            "id" : 7,
             "title" : "News Website",
             "content" : "Lorem ipsum dolor sit amet consectetur. Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem, eveniet.",
             "languages": ["HTML5", "CSS3", "JavaScript", "JQuery", "Bootstrap", "PHP", "MySQL"],
@@ -108,7 +117,7 @@ function Projects() {
         },
     
         {
-            "id" : 7,
+            "id" : 8,
             "title" : "Laravel Project",
             "content" : "Lorem ipsum dolor sit amet consectetur. Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem, eveniet.",
             "languages": ["HTML5", "CSS3", "JavaScript", "JQuery", "PHP", "MySQL", "Laravel"],
@@ -116,7 +125,7 @@ function Projects() {
             "demo": "https://github.com/KyawMinTun-96/Laravel"
         },
         {
-            "id" : 8,
+            "id" : 9,
             "title" : "Simple Blog Project",
             "content" : "Lorem ipsum dolor sit amet consectetur. Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem, eveniet.",
             "languages": ["HTML5", "CSS3", "JavaScript", "JQuery", "PHP", "MySQL"],
@@ -124,7 +133,7 @@ function Projects() {
             "demo": "https://github.com/KyawMinTun-96/simple-blog"
         },
         {
-            "id" : 9,
+            "id" : 10,
             "title" : "Simple Inventory System Project",
             "content" : "Lorem ipsum dolor sit amet consectetur. Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem, eveniet.",
             "languages": ["C#", "MSSQLSERVER"],
@@ -132,7 +141,7 @@ function Projects() {
             "demo": "https://github.com/KyawMinTun-96/SimpleInventorySystem"
         },
         {
-            "id" : 10,
+            "id" : 11,
             "title" : "Employee Management System Project",
             "content" : "Lorem ipsum dolor sit amet consectetur. Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem, eveniet.",
             "languages": ["HTML5", "CSS3", "JavaScript", "JQuery", "Python"],
@@ -140,7 +149,7 @@ function Projects() {
             "demo": "https://github.com/KyawMinTun-96/EmployeeManagementSystem"
         },
         {
-            "id" : 11,
+            "id" : 12,
             "title" : "Simple Student Registration",
             "content" : "Lorem ipsum dolor sit amet consectetur. Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem, eveniet.",
             "languages": ["Python"],
@@ -244,9 +253,9 @@ function Projects() {
             "image" : "jewellery.jpg"
         },
         {
-            "id" : 4,
-            "title": "Previous Portfolio",
-            "image" : "old_portfolio.png"
+            "id": 4,
+            "title": "Modern IT Company",
+            "image": "modernit.png"
         },
         {
             "id" : 5,
@@ -302,6 +311,11 @@ function Projects() {
             "id" : 15,
             "title": "Simple Blog System",
             "image": "Simple Blog System.png"
+        },
+        {
+            "id" : 16,
+            "title": "Previous Portfolio",
+            "image" : "old_portfolio.png"
         }
     ];
 
