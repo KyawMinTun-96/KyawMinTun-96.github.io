@@ -64,24 +64,15 @@ function Projects() {
 
         {
             "id" : 2,
-            "title" : "Jewellery Website",
-            "content" : "This jewelry website focuses on creating a visually stunning and user-friendly interface. The design will feature a clean and elegant layout. The site will be fully responsive, ensuring a seamless browsing experience on all devices, from desktops to mobile phones.",
-            "languages": ["HTML5", "CSS3", "JavaScript", "JQuery"],
-            "github": "https://github.com/KyawMinTun-96/Jewellery",
-            "demo": "https://kyawmintun-96.github.io/Jewellery/"
+            "title" : "Modern IT Website",
+            "content" : "This project involved designing and developing a state-of-the-art website for Modern IT Co.,Ltd.",
+            "languages": ["HTML5", "CSS3", "JavaScript", "JQuery", "React", "Bootstrap", "Firebase"],
+            "github": "https://github.com/KyawMinTun-96/modern-it",
+            "demo": "https://modernit-85be9.web.app/"
         },
     
         {
             "id" : 3,
-            "title" : "Travel and Tour Project",
-            "content" : "Lorem ipsum dolor sit amet consectetur. Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem, eveniet.",
-            "languages": ["HTML5", "CSS3", "JavaScript", "JQuery"],
-            "github": "https://github.com/KyawMinTun-96",
-            "demo": "https://github.com/KyawMinTun-96/Travel-and-Tour"
-        },
-    
-        {
-            "id" : 4,
             "title" : "Hotel Website",
             "content" : "This project involves creating a visually appealing and user-friendly website for a hotel. The front-end design will showcase the hotel's amenities, rooms, and services with high-quality images and an elegant layout.",
             "languages": ["HTML5", "CSS3", "JavaScript", "JQuery"],
@@ -90,12 +81,21 @@ function Projects() {
         },
 
         {
+            "id" : 4,
+            "title" : "Jewellery Website",
+            "content" : "This jewelry website focuses on creating a visually stunning and user-friendly interface. The design will feature a clean and elegant layout. The site will be fully responsive, ensuring a seamless browsing experience on all devices, from desktops to mobile phones.",
+            "languages": ["HTML5", "CSS3", "JavaScript", "JQuery"],
+            "github": "https://github.com/KyawMinTun-96/Jewellery",
+            "demo": "https://kyawmintun-96.github.io/Jewellery/"
+        },
+
+        {
             "id" : 5,
-            "title" : "Modern IT Company",
-            "content" : "This project involved designing and developing a state-of-the-art website for Modern IT Co.,Ltd.",
-            "languages": ["HTML5", "CSS3", "JavaScript", "JQuery", "React", "Bootstrap"],
-            "github": "https://github.com/KyawMinTun-96/modern-it",
-            "demo": "https://kyawmintun-96.github.io/modern-it"
+            "title" : "Travel and Tour Project",
+            "content" : "Lorem ipsum dolor sit amet consectetur. Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem, eveniet.",
+            "languages": ["HTML5", "CSS3", "JavaScript", "JQuery"],
+            "github": "https://github.com/KyawMinTun-96",
+            "demo": "https://github.com/KyawMinTun-96/Travel-and-Tour"
         },
     
         {
