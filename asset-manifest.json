@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.c7491887.css",
-    "main.js": "/static/js/main.622e86ae.js",
+    "main.js": "/static/js/main.f70a9811.js",
     "static/js/453.9415623e.chunk.js": "/static/js/453.9415623e.chunk.js",
     "static/media/travel_and_tour_dest.png": "/static/media/travel_and_tour_dest.528edb3ca5dd942588eb.png",
     "static/media/zfreeti_hotel.png": "/static/media/zfreeti_hotel.95141a7632e1fa156ada.png",
@@ -10,7 +10,7 @@
     "static/media/old_portfolio.png": "/static/media/old_portfolio.71816384986327dbad02.png",
     "static/media/travel.jpg": "/static/media/travel.316ad1f83bb7da6a1ee0.jpg",
     "static/media/one_mart.png": "/static/media/one_mart.7c35540eacc7c50fb474.png",
-    "static/media/modernit.png": "/static/media/modernit.35020a555b7381bc9626.png",
+    "static/media/modernit.png": "/static/media/modernit.d72048a66e1d420b6ebf.png",
     "static/media/Simple Blog System.png": "/static/media/Simple Blog System.65cd7d6b5c7c48ce08cb.png",
     "static/media/Food Order System.png": "/static/media/Food Order System.df9b8245b487e60faa80.png",
     "static/media/jewellery.jpg": "/static/media/jewellery.d775f14422e1a8a84b06.jpg",
@@ -28,11 +28,11 @@
     "static/media/laravel.png": "/static/media/laravel.68308e3c15a66e4e02c0.png",
     "index.html": "/index.html",
     "main.c7491887.css.map": "/static/css/main.c7491887.css.map",
-    "main.622e86ae.js.map": "/static/js/main.622e86ae.js.map",
+    "main.f70a9811.js.map": "/static/js/main.f70a9811.js.map",
     "453.9415623e.chunk.js.map": "/static/js/453.9415623e.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.c7491887.css",
-    "static/js/main.622e86ae.js"
+    "static/js/main.f70a9811.js"
   ]
 }
