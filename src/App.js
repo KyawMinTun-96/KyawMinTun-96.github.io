@@ -8,33 +8,55 @@ import Blog from "./components/Blog";
 import Contact from './components/Contact';
 import Error from './components/Error';
 import Footer from './components/Footer';
+import {useState, useEffect} from 'react';
+import './assets/css/app.css';
 
 function App() {
 
-  return (
+  const[loading, setLoading] = useState(true);
+  useEffect(() => {
 
-    <BrowserRouter>
+    setTimeout(() => {
+      setLoading(false);
+    }, 1500);
+  }, [loading])
 
-      <NavBar/>
-      <div id="content"> 
-        <main className="main">
-          <div className="main-inner">
-            <Routes>
-              <Route path='/' element={<Home/>}/>
-              <Route path='/about' element={<About/>}/>
-              <Route path='/experiences' element={<Experiences/>}/>
-              <Route path='/Projects' element={<Projects/>}/>
-              <Route path='/Blog' element={<Blog/>}/>
-              <Route path='/contact' element={<Contact/>}/>
-              <Route path='*' element={<Error/>}/>
-            </Routes>
+  return(
+    loading ? (
+      <div className="loader">
+        <div className="terminal-loader">
+          <div className="terminal-header">
+            <div className="terminal-title">Status</div>
+            <div className="terminal-controls">
+              <div className="control close"></div>
+              <div className="control minimize"></div>
+              <div className="control maximize"></div>
+            </div>
           </div>
-        </main>
-          <Footer/>
+          <div className="text">Loading...</div>
+        </div>
       </div>
-
-    </BrowserRouter>
-
+    ) : (
+      <BrowserRouter>
+        <NavBar/>
+        <div id="content"> 
+          <main className="main">
+            <div className="main-inner">
+              <Routes>
+                <Route path='/' element={<Home/>}/>
+                <Route path='/about' element={<About/>}/>
+                <Route path='/experiences' element={<Experiences/>}/>
+                <Route path='/Projects' element={<Projects/>}/>
+                <Route path='/Blog' element={<Blog/>}/>
+                <Route path='/contact' element={<Contact/>}/>
+                <Route path='*' element={<Error/>}/>
+              </Routes>
+            </div>
+          </main>
+            <Footer/>
+        </div>
+      </BrowserRouter>
+    )
   )
 }
 
