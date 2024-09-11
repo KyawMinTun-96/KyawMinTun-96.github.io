@@ -1,4 +1,4 @@
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { Routes, Route } from "react-router-dom";
 import NavBar from "./components/NavBar";
 import Home from './components/Home';
 import About from './components/About';
@@ -18,7 +18,7 @@ function App() {
 
     setTimeout(() => {
       setLoading(false);
-    }, 1500);
+    }, 2000);
   }, [loading])
 
   return(
@@ -37,25 +37,26 @@ function App() {
         </div>
       </div>
     ) : (
-      <BrowserRouter>
-        <NavBar/>
-        <div id="content"> 
-          <main className="main">
-            <div className="main-inner">
-              <Routes>
-                <Route path='/' element={<Home/>}/>
-                <Route path='/about' element={<About/>}/>
-                <Route path='/experiences' element={<Experiences/>}/>
-                <Route path='/Projects' element={<Projects/>}/>
-                <Route path='/Blog' element={<Blog/>}/>
-                <Route path='/contact' element={<Contact/>}/>
-                <Route path='*' element={<Error/>}/>
-              </Routes>
+          <>
+            <NavBar/>
+            <div id="content"> 
+              <main className="main">
+                <div className="main-inner">
+                  <Routes>
+                    <Route path='/' element={<Home/>}/>
+                    <Route path='/about' element={<About/>}/>
+                    <Route path='/experiences' element={<Experiences/>}/>
+                    <Route path='/Projects' element={<Projects/>}/>
+                    <Route path='/Blog' element={<Blog/>}/>
+                    <Route path='/contact' element={<Contact/>}/>
+                    <Route path='*' element={<Error/>}/>
+                  </Routes>
+                </div>
+              </main>
+                <Footer/>
             </div>
-          </main>
-            <Footer/>
-        </div>
-      </BrowserRouter>
+          </>
+
     )
   )
 }

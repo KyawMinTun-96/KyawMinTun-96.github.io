@@ -132,7 +132,7 @@ function VisitorCount() {
 
 
     return(
-        <section id="count">
+        <section id="count"  data-aos-delay="500" data-aos="fade-up" data-aos-duration="3000">
             <h2  className="sec-title">Visitor Count</h2>
             <div className="visitor-counter-container">
                 <div className="visitor-counter">

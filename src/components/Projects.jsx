@@ -433,7 +433,7 @@ function Projects() {
 
     return(
         <>
-            <section id="projects" className="my-projects">
+            <section id="projects" className="my-projects" data-aos-delay="500" data-aos="fade-up" data-aos-duration="3000">
                 <h2 className="sec-title">Projects</h2>
 
                 <div className="project-tab">
