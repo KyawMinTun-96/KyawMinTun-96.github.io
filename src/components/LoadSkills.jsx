@@ -26,7 +26,8 @@ export const PArray = [
         'C#': 'c#.png',
         'Python': 'python.png',
         'Laravel': 'laravel.png',
-        'Firebase': 'firebase.png'
+        'Firebase': 'firebase.png',
+        'Material UI': 'materialui.png'
 
     }
 ];
@@ -46,7 +47,7 @@ export const loadSkills = (pName) => {
 export const loadSkillsPrj = (data) => {
     return Object.entries(PArray[0]).map(([key, icon]) => (
         data.toLowerCase() === key.toLowerCase() ? (
-            <img src={require(`../assets/imgs/programming/${icon}`)} width={20} height={20} alt={key} key={key} />
+            <img src={require(`../assets/imgs/programming/${icon}`)} width={20} height={20} alt={key} key={key} title={key} />
         ) : null
     ));
 }

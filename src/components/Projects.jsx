@@ -91,6 +91,15 @@ function Projects() {
 
         {
             "id" : 5,
+            "title" : "Shop Sphere (Current Project)",
+            "content": "ShopSphere is a modern e-commerce platform built using React and Material UI, designed for users to easily browse, customize, and purchase products online. The platform focuses on providing a seamless shopping experience through an intuitive interface, responsive design, and flexible product management. ",
+            "languages": ["HTML5", "CSS3", "JavaScript", "JQuery", "React", "Firebase", "Material UI"],
+            "github": "https://github.com/KyawMinTun-96/shop-sphere",
+            "demo": "https://shopsphere-8539f.web.app/"
+        },
+
+        {
+            "id" : 6,
             "title" : "Travel and Tour Project",
             "content" : "Lorem ipsum dolor sit amet consectetur. Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem, eveniet.",
             "languages": ["HTML5", "CSS3", "JavaScript", "JQuery"],
@@ -99,7 +108,7 @@ function Projects() {
         },
     
         {
-            "id" : 6,
+            "id" : 7,
             "title" : "Internal Document Management System",
             "content" : "Lorem ipsum dolor sit amet consectetur. Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem, eveniet.",
             "languages": ["HTML5", "CSS3", "JavaScript", "JQuery", "PHP", "MySQL"],
@@ -108,7 +117,7 @@ function Projects() {
         },
     
         {
-            "id" : 7,
+            "id" : 8,
             "title" : "News Website",
             "content" : "Lorem ipsum dolor sit amet consectetur. Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem, eveniet.",
             "languages": ["HTML5", "CSS3", "JavaScript", "JQuery", "Bootstrap", "PHP", "MySQL"],
@@ -117,7 +126,7 @@ function Projects() {
         },
     
         {
-            "id" : 8,
+            "id" : 9,
             "title" : "Laravel Project",
             "content" : "Lorem ipsum dolor sit amet consectetur. Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem, eveniet.",
             "languages": ["HTML5", "CSS3", "JavaScript", "JQuery", "PHP", "MySQL", "Laravel"],
@@ -125,7 +134,7 @@ function Projects() {
             "demo": "https://github.com/KyawMinTun-96/Laravel"
         },
         {
-            "id" : 9,
+            "id" : 10,
             "title" : "Simple Blog Project",
             "content" : "Lorem ipsum dolor sit amet consectetur. Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem, eveniet.",
             "languages": ["HTML5", "CSS3", "JavaScript", "JQuery", "PHP", "MySQL"],
@@ -133,7 +142,7 @@ function Projects() {
             "demo": "https://github.com/KyawMinTun-96/simple-blog"
         },
         {
-            "id" : 10,
+            "id" : 11,
             "title" : "Simple Inventory System Project",
             "content" : "Lorem ipsum dolor sit amet consectetur. Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem, eveniet.",
             "languages": ["C#", "MSSQLSERVER"],
@@ -141,7 +150,7 @@ function Projects() {
             "demo": "https://github.com/KyawMinTun-96/SimpleInventorySystem"
         },
         {
-            "id" : 11,
+            "id" : 12,
             "title" : "Employee Management System Project",
             "content" : "Lorem ipsum dolor sit amet consectetur. Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem, eveniet.",
             "languages": ["HTML5", "CSS3", "JavaScript", "JQuery", "Python"],
@@ -149,7 +158,7 @@ function Projects() {
             "demo": "https://github.com/KyawMinTun-96/EmployeeManagementSystem"
         },
         {
-            "id" : 12,
+            "id" : 13,
             "title" : "Simple Student Registration",
             "content" : "Lorem ipsum dolor sit amet consectetur. Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem, eveniet.",
             "languages": ["Python"],
