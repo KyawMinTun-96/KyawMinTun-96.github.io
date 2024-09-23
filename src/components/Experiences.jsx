@@ -36,13 +36,13 @@ function Experiences() {
                     >
                         <span>Development</span>
                     </button>
-                    <button 
+                    {/* <button 
                     type="button" 
                     className={`tab-btn ${activeTab === 'tabExp' ? 'highlight' : ''}`}
                     onClick={() => handleTabClick('tabExp')}
                     >
                         <span>Experiences</span>
-                    </button>
+                    </button> */}
                     <button 
                     type="button" 
                     className={`tab-btn ${activeTab === 'tabSkl' ? 'highlight' : ''}`}
@@ -63,15 +63,15 @@ function Experiences() {
                     <h3>Education</h3>
                     <ul>
                         <li className="" style={{animationDelay: '.1s'}}>
-                            Technological University (Mawlamyine)
-                            <p className="dev_year"><small>December 2014 - September 2020, (Completed)</small></p>
-                            <p>Bachelor of Engineering (Information Technology)</p>
+                            Bachelor of Engineering (Information Technology)
+                            <p className="dev_year"><small>Completed</small></p>
+                            <p>Technological University (Mawlamyine)</p>
                         </li>
 
                         <li className="" style={{animationDelay: '.3s'}}>
-                            Basic Education High School (Daik-U)
-                            <p className="dev_year"><small>June 2014</small></p>
-                            <p>Matriculation Exam (Completed)</p>
+                            Matriculation Exam
+                            <p className="dev_year"><small>Completed</small></p>
+                            <p>Basic Education High School (Daik-U)</p>
                         </li>
                     </ul>
                 </div>
