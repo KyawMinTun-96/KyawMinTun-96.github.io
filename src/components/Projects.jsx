@@ -100,13 +100,12 @@ function Projects() {
 
         {
             "id" : 6,
-            "title" : "Travel and Tour Project",
-            "content" : "Lorem ipsum dolor sit amet consectetur. Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem, eveniet.",
-            "languages": ["HTML5", "CSS3", "JavaScript", "JQuery"],
-            "github": "https://github.com/KyawMinTun-96",
-            "demo": "https://github.com/KyawMinTun-96/Travel-and-Tour"
-        },
-    
+            "title" : "Mini Cart",
+            "content" : "A Mini Cart Project using Vue.js involves creating a small, interactive shopping cart component that allows users to view items they’ve selected for purchase.",
+            "languages": ["HTML5", "CSS3", "JavaScript", "Jquery", "Bootstrap", "Vue"],
+            "github": "https://github.com/KyawMinTun-96/mini-cart",
+            "demo": "https://mini-cart-a4691.web.app/"
+        },    
         {
             "id" : 7,
             "title" : "Internal Document Management System",
@@ -153,7 +152,7 @@ function Projects() {
             "id" : 12,
             "title" : "Employee Management System Project",
             "content" : "Lorem ipsum dolor sit amet consectetur. Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem, eveniet.",
-            "languages": ["HTML5", "CSS3", "JavaScript", "JQuery", "Python"],
+            "languages": ["HTML5", "CSS3", "JavaScript", "JQuery", "Python", "Python Django"],
             "github": "https://github.com/KyawMinTun-96",
             "demo": "https://github.com/KyawMinTun-96/EmployeeManagementSystem"
         },
@@ -164,6 +163,22 @@ function Projects() {
             "languages": ["Python"],
             "github": "https://github.com/KyawMinTun-96/Simple_Student_Registration_using_Tkinter-",
             "demo": "https://github.com/KyawMinTun-96/Simple_Student_Registration_using_Tkinter-"
+        },
+        {
+            "id" : 14,
+            "title" : "Mini Cart",
+            "content" : "Lorem ipsum dolor sit amet consectetur. Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem, eveniet.",
+            "languages": ["HTML5", "CSS3", "JavaScript", "Jquery", "Bootstrap", "Vue"],
+            "github": "https://github.com/KyawMinTun-96/mini-cart",
+            "demo": "https://mini-cart-a4691.web.app/"
+        },
+        {
+            "id" : 14,
+            "title" : "Travel and Tour Project",
+            "content" : "Lorem ipsum dolor sit amet consectetur. Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem, eveniet.",
+            "languages": ["HTML5", "CSS3", "JavaScript", "JQuery"],
+            "github": "https://github.com/KyawMinTun-96",
+            "demo": "https://github.com/KyawMinTun-96/Travel-and-Tour"
         }
     ];
 

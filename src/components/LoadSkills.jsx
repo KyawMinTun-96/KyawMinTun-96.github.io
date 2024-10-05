@@ -25,6 +25,7 @@ export const PArray = [
         'Azure DevOps': 'azure.png',
         'C#': 'c#.png',
         'Python': 'python.png',
+        'Python Django': 'django.png',
         'Laravel': 'laravel.png',
         'Firebase': 'firebase.png',
         'Material UI': 'materialui.png'
