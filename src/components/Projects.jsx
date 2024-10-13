@@ -4,7 +4,7 @@ import {loadSkillsPrj} from './LoadSkills'
 
 function Projects() {
 
-    const [activeTab, setActiveTab] = useState('loadProj');
+    const [activeTab, setActiveTab] = useState('loadDes');
     const [visibleCards, setVisibleCards] = useState(6);
     const [screenWidth, setScreenWidth] = useState(window.innerWidth);
     const [visibleDesign, setVisibleDesign] = useState(8);
@@ -61,15 +61,14 @@ function Projects() {
             "github": "https://github.com/HtetYinMin/One-Mart",
             "demo": "https://github.com/HtetYinMin/One-Mart"
         },
-
         {
             "id" : 2,
-            "title" : "Modern IT Website",
-            "content" : "This project involved designing and developing a state-of-the-art website for Modern IT Co.,Ltd.",
-            "languages": ["HTML5", "CSS3", "JavaScript", "JQuery", "React", "Bootstrap", "Firebase"],
-            "github": "https://github.com/KyawMinTun-96/modern-it",
-            "demo": "https://modernit-85be9.web.app/"
-        },
+            "title" : "Food Order",
+            "content" : "This Food Order Project using React.js involves creating a small, interactive food order cart component that allows users to view food menu they’ve selected for order.",
+            "languages": ["HTML5", "CSS3", "JavaScript", "React", "Firebase"],
+            "github": "https://github.com/KyawMinTun-96/foodorder",
+            "demo": "https://foodorder-84d47.web.app/"
+        }, 
     
         {
             "id" : 3,
@@ -114,14 +113,14 @@ function Projects() {
             "github": "https://github.com/KyawMinTun-96",
             "demo": "https://github.com/KyawMinTun-96/IDMS"
         },
-    
+
         {
             "id" : 8,
-            "title" : "News Website",
-            "content" : "Lorem ipsum dolor sit amet consectetur. Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem, eveniet.",
-            "languages": ["HTML5", "CSS3", "JavaScript", "JQuery", "Bootstrap", "PHP", "MySQL"],
-            "github": "https://github.com/KyawMinTun-96",
-            "demo": "https://github.com/KyawMinTun-96/news.mm"
+            "title" : "Modern IT Website",
+            "content" : "This project involved designing and developing a state-of-the-art website for Modern IT Co.,Ltd.",
+            "languages": ["HTML5", "CSS3", "JavaScript", "JQuery", "React", "Bootstrap", "Firebase"],
+            "github": "https://github.com/KyawMinTun-96/modern-it",
+            "demo": "https://modernit-85be9.web.app/"
         },
     
         {
@@ -179,7 +178,16 @@ function Projects() {
             "languages": ["HTML5", "CSS3", "JavaScript", "JQuery"],
             "github": "https://github.com/KyawMinTun-96",
             "demo": "https://github.com/KyawMinTun-96/Travel-and-Tour"
-        }
+        },
+
+        {
+            "id" : 15,
+            "title" : "News Website",
+            "content" : "Lorem ipsum dolor sit amet consectetur. Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem, eveniet.",
+            "languages": ["HTML5", "CSS3", "JavaScript", "JQuery", "Bootstrap", "PHP", "MySQL"],
+            "github": "https://github.com/KyawMinTun-96",
+            "demo": "https://github.com/KyawMinTun-96/news.mm"
+        },
     ];
 
     const renderProjects = () => {
@@ -267,9 +275,9 @@ function Projects() {
             "image" : "one_mart.png"
         },
         {
-            "id" : 2,
-            "title": "Zfreeti Hotel",
-            "image" : "zfreeti_hotel.png"
+            "id": 2,
+            "title": "Food Order",
+            "image": "food_order.png"
         },
         {
             "id" : 3,
@@ -283,18 +291,18 @@ function Projects() {
         },
         {
             "id" : 5,
+            "title": "Zfreeti Hotel",
+            "image" : "zfreeti_hotel.png"
+        },
+        {
+            "id" : 6,
             "title": "New Portfolio",
             "image" : "new_portfolio.png"
         },
         {
-            "id" : 6,
+            "id" : 7,
             "title": "Travel & Tour",
             "image" : "travel_and_tour1.png"
-        },
-        {
-            "id" : 7,
-            "title": "Simple Student Registration",
-            "image" : "SR.png"
         },
         {
             "id" : 8,
@@ -340,6 +348,11 @@ function Projects() {
             "id" : 16,
             "title": "Previous Portfolio",
             "image" : "old_portfolio.png"
+        },        
+        {
+            "id" : 17,
+            "title": "Simple Student Registration",
+            "image" : "SR.png"
         }
     ];
 
@@ -461,6 +474,13 @@ function Projects() {
                 <h2 className="sec-title">Projects</h2>
 
                 <div className="project-tab">
+                <button 
+                    type="button"
+                    className={`proj-btn ${activeTab === 'loadDes' ? 'proj-active' : ''}`}
+                    onClick={() => {
+                        handleClickTab('loadDes')
+                    }}
+                    >Design</button>
                     <button 
                     type="button" 
                     className={`proj-btn ${activeTab === 'loadProj' ? 'proj-active' : ''}`}
@@ -468,13 +488,6 @@ function Projects() {
                         handleClickTab('loadProj');
                         }}
                     >Projects</button>
-                    <button 
-                    type="button"
-                    className={`proj-btn ${activeTab === 'loadDes' ? 'proj-active' : ''}`}
-                    onClick={() => {
-                        handleClickTab('loadDes')
-                    }}
-                    >Design</button>
                     <button 
                     type="button" 
                     className={`proj-btn ${activeTab === 'loadBlog' ? 'proj-active' : ''}`}
