@@ -760,26 +760,33 @@
 }
 
 
-.design .view-btn {
+.design .view-btn,
+.design .demo-btn {
 	position: absolute;
 	top: 50%;
-	left: 50%;
-	transform: translate(-50%, -50%);
-	-webkit-transform: translate(-50%, -50%);
-	-moz-transform: translate(-50%, -50%);
-	-ms-transform: translate(-50%, -50%);
-	-o-transform: translate(-50%, -50%);
+	left: 40%;
+	transform: translate(-40%, -50%);
+	-webkit-transform: translate(-40%, -50%);
+	-moz-transform: translate(-40%, -50%);
+	-ms-transform: translate(-40%, -50%);
+	-o-transform: translate(-40%, -50%);
 	background-color: transparent;
 	border: none;
 	opacity: 0;
 }
 
-.design .view-btn .fa-eye {
-	color: #fff;
-	font-size: 20px;
+.design .demo-btn {
+	left: 53%;
 }
 
-.design > .card:hover > .view-btn {
+.design .view-btn .fa-eye,
+.design .demo-btn .fa-link {
+	color: #fff;
+	font-size: 18px;
+}
+
+.design > .card:hover > .view-btn,
+.design > .card:hover > .demo-btn {
 	opacity: 1;
 	cursor: pointer;
 	transition: all .1s ease;

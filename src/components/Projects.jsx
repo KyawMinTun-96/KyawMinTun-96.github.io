@@ -272,62 +272,74 @@ function Projects() {
         {
             "id" : 1,
             "title": "One Mart",
-            "image" : "one_mart.png"
+            "image" : "one_mart.png",
+            "demo" : "https://github.com/HtetYinMin/One-Mart"
         },
         {
             "id": 2,
             "title": "Food Order",
-            "image": "food_order.png"
+            "image": "food_order.png",
+            "demo" : "https://foodorder-84d47.web.app/"
         },
         {
             "id" : 3,
             "title": "Jewellery",
-            "image" : "jewellery.jpg"
+            "image" : "jewellery.jpg",
+            "demo" : "#"
         },
         {
             "id": 4,
             "title": "Modern IT Company",
-            "image": "modernit.png"
+            "image": "modernit.png",
+            "demo" : "https://modernit-85be9.web.app/"
         },
         {
             "id" : 5,
             "title": "Zfreeti Hotel",
-            "image" : "zfreeti_hotel.png"
+            "image" : "zfreeti_hotel.png",
+            "demo" : "#"
         },
         {
             "id" : 6,
             "title": "New Portfolio",
-            "image" : "new_portfolio.png"
+            "image" : "new_portfolio.png",
+            "demo" : "https://kyawmintun-96.web.app/"
         },
         {
             "id" : 7,
             "title": "Travel & Tour",
-            "image" : "travel_and_tour1.png"
+            "image" : "travel_and_tour1.png",
+            "demo" : "#"
         },
         {
             "id" : 8,
             "title": "Internal Document Management",
-            "image" : "idms.png"
+            "image" : "idms.png",
+            "demo" : "#"
         },
         {
             "id" : 9,
             "title": "Employee Management System",
-            "image": "ems.png"
+            "image": "ems.png",
+            "demo" : "#"
         },
         {
             "id" : 10,
             "title": "Simple Inventory System",
-            "image": "simple_inventory.png"
+            "image": "simple_inventory.png",
+            "demo" : "#"
         },
         {
             "id" : 11,
             "title": "Voyager Website",
-            "image": "voyager.jpg"
+            "image": "voyager.jpg",
+            "demo" : "#"
         },
         {
             "id" : 12,
             "title": "Travel Website",
-            "image": "travel.jpg"
+            "image": "travel.jpg",
+            "demo" : "#"
         },
         {
             "id" : 13,
@@ -337,22 +349,26 @@ function Projects() {
         {
             "id" : 14,
             "title": "Email Verification",
-            "image": "email_verification.png"
+            "image": "email_verification.png",
+            "demo" : "#"
         },
         {
             "id" : 15,
             "title": "Simple Blog System",
-            "image": "Simple Blog System.png"
+            "image": "Simple Blog System.png",
+            "demo" : "#"
         },
         {
             "id" : 16,
             "title": "Previous Portfolio",
-            "image" : "old_portfolio.png"
+            "image" : "old_portfolio.png",
+            "demo" : "#"
         },        
         {
             "id" : 17,
             "title": "Simple Student Registration",
-            "image" : "SR.png"
+            "image" : "SR.png",
+            "demo" : "#"
         }
     ];
 
@@ -419,9 +435,13 @@ function Projects() {
                         <img src={require(`../assets/imgs/designs/${value.image}`)} alt="designs"/>
                     </div>
                                         
-                    <button type="button" onClick={() => openModal(value.title, value.image)} className="view-btn">
+                    <button type="button" title="view design" onClick={() => openModal(value.title, value.image)} className="view-btn">
                         <i className="fa fa-eye"></i>
                     </button>
+
+                    <a href={value.demo} target="_blank" rel="noreferrer" title="demo" className="demo-btn">
+                        <i className="fa fa-link"></i>
+                    </a>
                 </div>
             );
 
